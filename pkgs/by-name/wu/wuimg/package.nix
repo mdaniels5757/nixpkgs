@@ -1,7 +1,7 @@
 {
   lib,
   stdenv,
-  fetchgit,
+  fetchFromGitea,
 
   meson,
   ninja,
@@ -19,6 +19,7 @@
   libarchive,
   libavif,
   libepoxy,
+  libflif,
   libheif,
   libjpeg,
   libjxl,
@@ -42,27 +43,22 @@
   glfwSupport ? (lib.meta.availableOn stdenv.hostPlatform glfw),
   waylandSupport ? (lib.meta.availableOn stdenv.hostPlatform wayland)
 }:
-let
-  rev = "ccfb85ded2b9f375b3a97f289239a10a06082719";
-in
 stdenv.mkDerivation {
   pname = "wuimg";
 
-  version = rev;
+  version = "0-unstable-2025-05-03";
 
-  src = fetchgit {
-    url = "https://codeberg.org/kaleido/wuimg.git";
-    rev = rev;
+  src = fetchFromGitea {
+    domain = "codeberg.org";
+    owner = "kaleido";
+    repo = "wuimg";
+    rev = "ccfb85ded2b9f375b3a97f289239a10a06082719";
     hash = "sha256-3pWKqQGFwAuQNGACrsgoa8CB4f2X/lukfq5NYNVPEf4=";
   };
 
-  enableParallelBuilding = true;
-  enableDebugInfo = true;
-  dontStrip = true;
   strictDeps = true;
 
   mesonFlags = [
-    "-Dflif=disabled"
     (lib.mesonEnable "window_wayland" waylandSupport)
     (lib.mesonEnable "window_glfw" glfwSupport)
     (lib.mesonEnable "window_drm" drmSupport)
@@ -73,13 +69,11 @@ stdenv.mkDerivation {
     python3
     pkg-config
     ninja
-  ] ++ lib.optionals (waylandSupport) [
+  ] ++ lib.optionals waylandSupport [
     wayland-scanner
   ];
 
   buildInputs = [
-    # libflif # Not availible
-
     # Required
     charls
     exiv2
@@ -91,6 +85,7 @@ stdenv.mkDerivation {
     libarchive
     libavif
     libepoxy
+    libflif
     libheif
     libjpeg
     libjxl
@@ -118,8 +113,6 @@ stdenv.mkDerivation {
 
   patches = [
     ./src_meson.build.patch
-    # ./window.patch
-    # ./wayland.patch
   ];
 
   postPatch = ''
