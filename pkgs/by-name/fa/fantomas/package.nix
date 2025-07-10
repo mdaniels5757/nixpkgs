@@ -11,7 +11,7 @@ buildDotnetGlobalTool {
     homepage = "https://github.com/fsprojects/fantomas";
     license = licenses.asl20;
     platforms = platforms.linux ++ platforms.darwin;
-    maintainers = with maintainers; [ mikaelfangel ];
+    maintainers = with maintainers; [ ];
     mainProgram = "fantomas";
   };
 }
