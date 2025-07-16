@@ -3,7 +3,6 @@
   stdenv,
   fetchFromGitHub,
   rustPlatform,
-  writableTmpDirAsHomeHook,
   versionCheckHook,
 }:
 
@@ -19,10 +18,6 @@ rustPlatform.buildRustPackage (finalAttrs: {
   };
 
   cargoHash = "sha256-2KoHKTN1Jvyvk9ravi0a9D+RIFYa1KmHLJQzKT2iP9A=";
-
-  nativeCheckInputs = [
-    writableTmpDirAsHomeHook
-  ];
 
   checkFlags = lib.optionals stdenv.hostPlatform.isDarwin [
     # When sandboxing, "Attempted to create a NULL object."
