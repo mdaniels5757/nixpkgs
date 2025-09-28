@@ -9,6 +9,7 @@
 
   # dependencies
   build,
+  check-manifest,
   docutils,
   flit-core,
   packaging,
@@ -22,23 +23,19 @@
 
 buildPythonPackage rec {
   pname = "pyroma";
-  version = "4.2";
+  version = "5.0";
   pyproject = true;
-
-  # https://github.com/regebro/pyroma/issues/104
-  disabled = pythonAtLeast "3.12";
 
   src = fetchFromGitHub {
     owner = "regebro";
     repo = "pyroma";
-    rev = version;
-    sha256 = "sha256-ElSw+bY6fbHJPTX7O/9JZ4drttfbUQsU/fv3Cqqb/J4=";
+    tag = version;
+    sha256 = "sha256-9yE6KEUgFSWnRQHpI5frq6SdnLwnVSdgBrhy09pLWm8=";
   };
 
-  propagatedBuildInputs = [
+  dependencies = [
     build
     docutils
-    flit-core
     packaging
     pygments
     setuptools
@@ -46,7 +43,11 @@ buildPythonPackage rec {
     trove-classifiers
   ];
 
-  nativeCheckInputs = [ pytestCheckHook ];
+  nativeCheckInputs = [
+    check-manifest
+    flit-core
+    pytestCheckHook
+  ];
 
   disabledTests = [
     # tries to reach pypi
