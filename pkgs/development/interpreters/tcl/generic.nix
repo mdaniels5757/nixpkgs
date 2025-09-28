@@ -2,6 +2,7 @@
   lib,
   stdenv,
   callPackage,
+  libtommath,
   makeSetupHook,
   runCommand,
   tzdata,
@@ -42,7 +43,10 @@ let
       zip
     ];
 
-    buildInputs = lib.optionals (lib.versionAtLeast version "9.0") [
+    buildInputs = [
+      libtommath
+    ]
+    ++ lib.optionals (lib.versionAtLeast version "9.0") [
       zlib
     ];
 
