@@ -20,6 +20,8 @@ stdenv.mkDerivation {
   pname = "sommelier";
   version = "142.0";
 
+  separateDebugInfo = true;
+
   src = fetchzip rec {
     url = "https://chromium.googlesource.com/chromiumos/platform2/+archive/${passthru.rev}/vm_tools/sommelier.tar.gz";
     passthru.rev = "1a0ac747d984556d0d58ba38c30ba03c478c0697";
