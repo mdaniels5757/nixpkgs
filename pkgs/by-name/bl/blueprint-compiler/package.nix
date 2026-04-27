@@ -31,8 +31,10 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   nativeBuildInputs = [
+    gobject-introspection
     meson
     ninja
+    python3
     wrapGAppsNoGuiHook
   ];
 
@@ -43,11 +45,6 @@ stdenv.mkDerivation (finalAttrs: {
         pygobject3
       ]
     ))
-  ];
-
-  propagatedBuildInputs = [
-    # For setup hook, so that the compiler can find typelib files
-    gobject-introspection
   ];
 
   nativeCheckInputs = [
@@ -85,6 +82,8 @@ stdenv.mkDerivation (finalAttrs: {
       packageName = "blueprint-compiler";
     };
   };
+
+  strictDeps = true;
 
   meta = {
     description = "Markup language for GTK user interface files";
