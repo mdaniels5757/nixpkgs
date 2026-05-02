@@ -16,7 +16,7 @@
 buildPythonPackage {
   pname = "pyautogui";
   version = "0.9.53";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "asweigart";

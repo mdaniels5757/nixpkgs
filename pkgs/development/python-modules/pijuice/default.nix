@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pijuice";
   version = "1.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "PiSupply";

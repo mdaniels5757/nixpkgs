@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "jinja2-ansible-filters";
   version = "1.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

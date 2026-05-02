@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "trezor-agent";
   version = "0.12.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "trezor_agent";

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "mahotas";
   version = "1.4.18";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "luispedro";

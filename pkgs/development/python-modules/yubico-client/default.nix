@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "yubico-client";
   version = "1.13.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

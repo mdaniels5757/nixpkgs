@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "ndg-httpsclient";
 
   src = fetchFromGitHub {

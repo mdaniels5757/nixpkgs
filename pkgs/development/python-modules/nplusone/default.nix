@@ -20,7 +20,7 @@
 buildPythonPackage rec {
   pname = "nplusone";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

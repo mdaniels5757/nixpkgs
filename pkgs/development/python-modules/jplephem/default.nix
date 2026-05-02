@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "jplephem";
   version = "2.24";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

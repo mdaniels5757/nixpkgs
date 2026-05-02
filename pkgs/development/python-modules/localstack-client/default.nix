@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "localstack-client";
   version = "2.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "localstack_client";

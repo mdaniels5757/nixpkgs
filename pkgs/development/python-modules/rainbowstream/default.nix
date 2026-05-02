@@ -20,7 +20,7 @@
 buildPythonPackage {
   pname = "rainbowstream";
   version = "1.5.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "orakaro";

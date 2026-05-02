@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "arxiv2bib";
   version = "1.0.8";
-  format = "setuptools";
+  pyproject = true;
 
   # Missing tests on Pypi
   src = fetchFromGitHub {

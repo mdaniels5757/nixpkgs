@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pycketcasts";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nwithan8";

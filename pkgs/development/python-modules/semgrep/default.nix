@@ -50,7 +50,7 @@ let
   semgrepBinPath = lib.makeBinPath [ semgrep-core ];
 in
 buildPythonPackage rec {
-  format = "setuptools";
+  pyproject = true;
   pname = "semgrep";
   inherit (common) version;
   src = fetchFromGitHub {

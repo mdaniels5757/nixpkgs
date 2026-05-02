@@ -24,7 +24,7 @@ buildPythonPackage {
     hash = "sha256-0mRLJATn+6dYswgDg2zs7RHKSvY4+gNt4SBHeF0G3Xg=";
   };
 
-  format = "setuptools";
+  pyproject = true;
 
   propagatedBuildInputs = [
     lxml

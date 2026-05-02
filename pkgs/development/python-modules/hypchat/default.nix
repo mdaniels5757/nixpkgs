@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "hypchat";
   version = "0.21";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = pythonAtLeast "3.12";
 

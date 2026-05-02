@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "localimport";
   version = "1.7.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

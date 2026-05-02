@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-devspaces";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pychm";
   version = "0.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

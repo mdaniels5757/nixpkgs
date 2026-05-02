@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyeight";
   version = "0.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mezz64";

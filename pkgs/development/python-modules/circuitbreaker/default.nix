@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "circuitbreaker";
   version = "2.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "fabfuel";

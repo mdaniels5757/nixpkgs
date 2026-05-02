@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "aliyun-python-sdk-iot";
   version = "8.59.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

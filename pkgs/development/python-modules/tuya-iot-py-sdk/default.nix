@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "tuya-iot-py-sdk";
   version = "0.6.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tuya";

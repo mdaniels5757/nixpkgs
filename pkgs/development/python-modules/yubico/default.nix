@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "python-yubico";
   version = "1.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

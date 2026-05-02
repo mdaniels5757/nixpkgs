@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "django-hcaptcha";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) version;

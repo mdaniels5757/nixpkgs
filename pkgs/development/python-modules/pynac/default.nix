@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "pynac";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchurl {
     url = "mirror://sourceforge/project/pynac/pynac/pynac-0.2/pynac-0.2.tar.gz";

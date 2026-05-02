@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "quantum-gateway";
   version = "0.0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "cisasteelersfan";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "asmog";
   version = "0.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

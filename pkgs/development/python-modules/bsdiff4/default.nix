@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "bsdiff4";
   version = "1.2.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

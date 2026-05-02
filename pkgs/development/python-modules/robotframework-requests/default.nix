@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "robotframework-requests";
   version = "0.9.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "MarketSquare";

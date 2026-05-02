@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "torrequest";
   version = "0.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

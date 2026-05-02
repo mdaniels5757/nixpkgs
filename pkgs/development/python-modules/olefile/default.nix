@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "olefile";
   version = "0.47";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

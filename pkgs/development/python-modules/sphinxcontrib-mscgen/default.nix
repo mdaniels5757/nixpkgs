@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sphinxcontrib-mscgen";
   version = "0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

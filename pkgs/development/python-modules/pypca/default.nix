@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pypca";
   version = "0.0.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

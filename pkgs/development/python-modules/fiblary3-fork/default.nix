@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "fiblary3-fork";
   version = "0.1.12";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

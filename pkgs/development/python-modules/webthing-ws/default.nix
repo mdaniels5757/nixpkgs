@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "webthing-ws";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "home-assistant-ecosystem";

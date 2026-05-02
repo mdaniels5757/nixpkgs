@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "face-recognition-models";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "face_recognition_models";

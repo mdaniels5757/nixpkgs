@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "py-lru-cache";
   version = "0.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

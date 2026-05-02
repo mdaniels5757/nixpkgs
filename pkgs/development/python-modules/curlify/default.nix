@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "curlify";
   version = "2.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ofw";

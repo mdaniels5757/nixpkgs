@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "rshell";
   version = "0.0.36";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

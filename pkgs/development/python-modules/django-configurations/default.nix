@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "django-configurations";
   version = "2.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

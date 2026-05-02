@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "frilouz";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchFromGitHub {

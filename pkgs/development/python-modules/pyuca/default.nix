@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyuca";
   version = "1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jtauber";

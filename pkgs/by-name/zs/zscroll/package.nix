@@ -8,7 +8,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "zscroll";
   version = "2.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   # don't prefix with python version
   namePrefix = "";

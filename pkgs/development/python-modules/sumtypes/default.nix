@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sumtypes";
   version = "0.1a6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "radix";

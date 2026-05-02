@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "image-diff";
   version = "0.2.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "simonw";

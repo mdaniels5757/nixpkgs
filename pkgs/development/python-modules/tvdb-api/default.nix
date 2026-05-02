@@ -9,7 +9,7 @@
 buildPythonPackage {
   pname = "tvdb-api";
   version = "3.2.0-beta";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dbr";

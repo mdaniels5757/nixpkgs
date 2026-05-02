@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "gradient-statsd";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "gradient_statsd";

@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "qtpy";
   version = "2.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

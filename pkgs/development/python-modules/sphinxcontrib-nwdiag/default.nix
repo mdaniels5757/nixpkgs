@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "sphinxcontrib-nwdiag";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

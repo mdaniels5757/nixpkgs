@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "imgdiff";
   version = "1.8.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mgedmin";

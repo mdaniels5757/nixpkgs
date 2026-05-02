@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "orvibo";
   version = "1.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "happyleavesaoc";

@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "stups-fullstop";
   version = "1.1.31";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k || pythonAtLeast "3.11"; # Uses regex patterns deprecated in 3.9, errors in 3.11+
 
   src = fetchFromGitHub {

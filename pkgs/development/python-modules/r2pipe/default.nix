@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "r2pipe";
   version = "1.9.6";
-  format = "setuptools";
+  pyproject = true;
 
   postPatch =
     let

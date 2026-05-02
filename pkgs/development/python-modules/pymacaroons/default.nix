@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pymacaroons";
   version = "0.13.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

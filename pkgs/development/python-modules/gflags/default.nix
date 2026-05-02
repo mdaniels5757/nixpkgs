@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   version = "3.1.2";
-  format = "setuptools";
+  pyproject = true;
   pname = "python-gflags";
 
   src = fetchPypi {

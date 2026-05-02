@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "edward";
   version = "1.3.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

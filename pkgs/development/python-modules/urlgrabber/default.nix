@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "urlgrabber";
   version = "4.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

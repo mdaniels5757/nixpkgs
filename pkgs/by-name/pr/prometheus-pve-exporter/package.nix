@@ -8,7 +8,7 @@
 python3.pkgs.buildPythonApplication rec {
   pname = "prometheus_pve_exporter";
   version = "3.8.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

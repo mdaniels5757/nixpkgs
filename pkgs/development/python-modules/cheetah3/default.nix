@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "cheetah3";
   version = "3.4.0.post5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CheetahTemplate3";

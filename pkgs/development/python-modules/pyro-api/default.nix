@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
   pname = "pyro-api";
 
   src = fetchPypi {

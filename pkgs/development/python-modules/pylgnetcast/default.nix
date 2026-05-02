@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pylgnetcast";
   version = "0.3.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Drafteed";

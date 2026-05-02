@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "aiolifx-connection";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "aiolifx_connection";

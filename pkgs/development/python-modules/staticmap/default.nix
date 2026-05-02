@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "staticmap";
   version = "0.5.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

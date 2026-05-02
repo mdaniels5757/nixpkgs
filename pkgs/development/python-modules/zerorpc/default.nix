@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "zerorpc";
   version = "0.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

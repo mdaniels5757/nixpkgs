@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "email-validator";
   version = "2.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "email_validator";

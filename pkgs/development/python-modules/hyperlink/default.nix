@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "hyperlink";
   version = "21.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

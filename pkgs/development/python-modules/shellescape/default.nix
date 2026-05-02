@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "shellescape";
   version = "3.8.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "chrissimpkins";

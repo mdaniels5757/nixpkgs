@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "aiohttp-wsgi";
   version = "0.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "etianen";

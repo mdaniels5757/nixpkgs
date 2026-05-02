@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "dot2tex";
   version = "2.11.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

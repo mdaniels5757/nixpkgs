@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "macaddress";
   version = "2.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mentalisttraceur";

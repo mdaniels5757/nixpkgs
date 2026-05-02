@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pymedio";
   version = "0.2.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jcreinhold";

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "advantage-air";
   version = "0.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "advantage_air";

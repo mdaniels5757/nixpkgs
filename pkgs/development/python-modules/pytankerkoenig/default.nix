@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pytankerkoenig";
   version = "0.0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

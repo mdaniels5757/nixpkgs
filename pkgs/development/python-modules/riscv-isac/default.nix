@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "riscv-isac";
   version = "0.18.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "riscv-software-src";

@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "ismartgate";
   version = "5.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bdraco";

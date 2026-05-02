@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "fqdn";
   version = "1.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ypcrts";

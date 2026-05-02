@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "python-magic";
   version = "0.4.27";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ahupp";

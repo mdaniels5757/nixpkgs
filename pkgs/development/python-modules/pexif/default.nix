@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pexif";
   version = "0.15";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

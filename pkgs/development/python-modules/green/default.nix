@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "green";
   version = "4.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

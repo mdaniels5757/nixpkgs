@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "picos";
   version = "2.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

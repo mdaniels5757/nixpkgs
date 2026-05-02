@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pytest-expect";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pymitv";
   version = "1.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

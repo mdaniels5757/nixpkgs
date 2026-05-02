@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "requests-credssp";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jborean93";

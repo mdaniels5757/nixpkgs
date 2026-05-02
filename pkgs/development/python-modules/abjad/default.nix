@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "abjad";
   version = "3.31";
-  format = "setuptools";
+  pyproject = true;
 
   # see issue upstream indicating Python 3.12 support will come
   # with version 3.20: https://github.com/Abjad/abjad/issues/1574

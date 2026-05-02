@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sphinxcontrib-bayesnet";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

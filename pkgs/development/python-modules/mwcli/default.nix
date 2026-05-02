@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "mwcli";
   version = "0.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

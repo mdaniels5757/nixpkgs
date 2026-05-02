@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "maxcube-api";
   version = "0.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hackercowboy";

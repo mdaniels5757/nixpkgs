@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "riscof";
   version = "1.25.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "riscv-software-src";

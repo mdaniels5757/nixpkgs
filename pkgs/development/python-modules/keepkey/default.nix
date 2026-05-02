@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "keepkey";
   version = "7.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "keepkey";

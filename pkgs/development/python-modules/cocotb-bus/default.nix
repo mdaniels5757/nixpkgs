@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "cocotb-bus";
   version = "unstable-2025-11-03";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "cocotb";

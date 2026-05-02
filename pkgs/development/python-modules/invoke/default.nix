@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "invoke";
   version = "2.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "docx2txt";
   version = "0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

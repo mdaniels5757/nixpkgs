@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "dash-html-components";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "dash_html_components";

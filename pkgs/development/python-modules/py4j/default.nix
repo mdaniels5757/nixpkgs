@@ -8,7 +8,7 @@ buildPythonPackage rec {
   pname = "py4j";
 
   version = "0.10.9.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

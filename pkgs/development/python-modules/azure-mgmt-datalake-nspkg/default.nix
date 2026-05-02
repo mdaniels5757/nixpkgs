@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-datalake-nspkg";
   version = "3.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

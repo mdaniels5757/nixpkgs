@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.5.14";
-  format = "setuptools";
+  pyproject = true;
   pname = "num2words";
 
   src = fetchPypi {

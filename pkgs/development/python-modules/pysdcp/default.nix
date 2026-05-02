@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pysdcp";
   version = "1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pySDCP";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "cssmin";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

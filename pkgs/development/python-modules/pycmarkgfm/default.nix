@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pycmarkgfm";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

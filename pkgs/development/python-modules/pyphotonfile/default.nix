@@ -10,7 +10,7 @@ let
 in
 buildPythonPackage {
   pname = "pyphotonfile";
-  format = "setuptools";
+  pyproject = true;
   inherit version;
 
   propagatedBuildInputs = [

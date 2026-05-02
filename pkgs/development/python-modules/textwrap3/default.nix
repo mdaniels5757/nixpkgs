@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "textwrap3";
   version = "0.9.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

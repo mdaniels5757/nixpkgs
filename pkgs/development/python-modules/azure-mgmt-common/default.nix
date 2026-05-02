@@ -12,7 +12,7 @@
 
 buildPythonPackage rec {
   version = "0.20.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "azure-mgmt-common";
 
   src = fetchPypi {

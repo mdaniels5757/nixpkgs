@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   version = "0.11.0";
   pname = "mwclient";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mwclient";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "facenet-pytorch";
   version = "2.5.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

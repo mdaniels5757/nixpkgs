@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   pname = "certbot-dns-rfc2136";
-  format = "setuptools";
+  pyproject = true;
 
   inherit (certbot) src version;
 

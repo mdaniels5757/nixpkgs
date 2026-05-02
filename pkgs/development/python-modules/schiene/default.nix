@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "schiene";
   version = "0.26";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

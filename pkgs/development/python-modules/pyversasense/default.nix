@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pyversasense";
   version = "0.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "imstevenxyz";

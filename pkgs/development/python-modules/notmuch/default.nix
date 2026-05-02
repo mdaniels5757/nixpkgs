@@ -11,7 +11,7 @@ buildPythonPackage {
 
   sourceRoot = notmuch.pythonSourceRoot;
 
-  format = "setuptools";
+  pyproject = true;
 
   buildInputs = [
     python

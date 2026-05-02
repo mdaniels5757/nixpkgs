@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "esprima";
   version = "4.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Kronuz";

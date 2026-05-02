@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyqt5-sip";
   version = "12.17.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pyqt5_sip";

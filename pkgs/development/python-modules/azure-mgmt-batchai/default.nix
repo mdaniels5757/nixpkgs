@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-batchai";
   version = "7.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

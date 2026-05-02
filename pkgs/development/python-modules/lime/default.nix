@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "lime";
   version = "0.2.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

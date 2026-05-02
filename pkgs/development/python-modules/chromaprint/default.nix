@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "chromaprint";
   version = "0.5";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = isPy27;
 

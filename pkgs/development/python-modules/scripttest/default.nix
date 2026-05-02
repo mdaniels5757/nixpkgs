@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "scripttest";
   version = "2.0.post1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

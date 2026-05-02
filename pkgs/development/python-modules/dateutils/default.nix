@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "dateutils";
   version = "0.6.12";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

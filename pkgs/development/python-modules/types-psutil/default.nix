@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-psutil";
   version = "7.2.1.20260116";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "types_psutil";

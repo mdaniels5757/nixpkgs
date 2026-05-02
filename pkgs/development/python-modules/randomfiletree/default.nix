@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "randomfiletree";
   version = "1.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "RandomFileTree";

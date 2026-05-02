@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pymediaroom";
   version = "0.6.5.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

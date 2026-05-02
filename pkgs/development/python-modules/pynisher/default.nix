@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pynisher";
   version = "1.0.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

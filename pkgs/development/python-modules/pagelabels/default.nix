@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pagelabels";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

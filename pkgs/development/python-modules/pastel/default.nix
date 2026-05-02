@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pastel";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

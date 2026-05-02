@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "kiwiki-client";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "c7h";

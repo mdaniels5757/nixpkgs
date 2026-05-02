@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "iterm2";
   version = "2.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -9,7 +9,7 @@ with python3.pkgs;
 buildPythonApplication (finalAttrs: {
   pname = "chkcrontab";
   version = "1.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

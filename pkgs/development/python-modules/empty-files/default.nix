@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "empty-files";
   version = "0.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "approvals";

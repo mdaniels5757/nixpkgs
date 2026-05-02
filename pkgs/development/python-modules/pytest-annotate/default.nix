@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pytest-annotate";
   version = "1.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

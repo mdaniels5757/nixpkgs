@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pylev";
   version = "1.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "toastdriven";

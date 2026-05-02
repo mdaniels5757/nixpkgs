@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "hetzner";
   version = "0.8.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "hetzner";

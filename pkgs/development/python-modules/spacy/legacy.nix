@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "spacy-legacy";
   version = "3.0.12";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

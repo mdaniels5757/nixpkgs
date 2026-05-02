@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ephem";
   version = "4.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

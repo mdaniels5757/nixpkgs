@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "gcsa";
   version = "2.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "kuzmoyev";

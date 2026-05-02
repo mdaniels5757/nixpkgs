@@ -10,7 +10,7 @@ let
 in
 buildPythonPackage {
   inherit version pname;
-  format = "setuptools";
+  pyproject = true;
 
   # Pypi source package doesn't contain tests
   src = fetchFromGitHub {

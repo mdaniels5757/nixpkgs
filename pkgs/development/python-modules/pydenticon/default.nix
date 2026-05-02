@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pydenticon";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

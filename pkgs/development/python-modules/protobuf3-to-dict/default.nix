@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "protobuf3-to-dict";
   version = "0.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

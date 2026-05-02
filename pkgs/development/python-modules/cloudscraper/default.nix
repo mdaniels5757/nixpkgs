@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "cloudscraper";
   version = "1.2.71";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

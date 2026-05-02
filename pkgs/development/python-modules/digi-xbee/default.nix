@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "digi-xbee";
   version = "1.5.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

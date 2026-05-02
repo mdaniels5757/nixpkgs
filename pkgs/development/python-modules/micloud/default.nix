@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "micloud";
   version = "0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Squachen";

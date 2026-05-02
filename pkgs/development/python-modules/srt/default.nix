@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "srt";
   version = "3.5.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

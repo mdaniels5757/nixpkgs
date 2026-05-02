@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "libmr";
   version = "0.1.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

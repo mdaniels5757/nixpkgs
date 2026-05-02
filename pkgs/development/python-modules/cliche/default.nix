@@ -9,7 +9,7 @@
 buildPythonPackage {
   pname = "cliche";
   version = "0.10.108";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "kootenpv";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "verboselogs";
   version = "1.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "xolox";

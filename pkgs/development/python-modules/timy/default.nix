@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "timy";
   version = "0.4.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ramonsaraiva";

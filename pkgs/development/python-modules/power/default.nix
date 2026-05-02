@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "power";
   version = "1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

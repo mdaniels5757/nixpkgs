@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pypinyin";
   version = "0.55.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mozillazg";

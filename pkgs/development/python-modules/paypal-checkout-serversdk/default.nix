@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "paypal-checkout-serversdk";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "paypal";

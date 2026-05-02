@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "click-log";
   version = "0.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

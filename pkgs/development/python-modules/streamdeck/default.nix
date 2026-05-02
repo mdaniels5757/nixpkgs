@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "streamdeck";
   version = "0.9.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

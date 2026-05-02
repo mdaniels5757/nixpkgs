@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "tika";
   version = "3.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

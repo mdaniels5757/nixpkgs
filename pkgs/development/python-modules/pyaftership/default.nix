@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pyaftership";
   version = "23.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ludeeus";

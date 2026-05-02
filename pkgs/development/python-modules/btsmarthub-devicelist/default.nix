@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "btsmarthub-devicelist";
   version = "0.2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jxwolstenholme";

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "txamqp";
   version = "0.8.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "txAMQP";

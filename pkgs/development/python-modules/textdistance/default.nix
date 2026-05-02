@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "textdistance";
   version = "4.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

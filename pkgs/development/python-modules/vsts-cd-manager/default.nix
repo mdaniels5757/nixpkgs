@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   version = "1.0.2";
-  format = "setuptools";
+  pyproject = true;
   pname = "vsts-cd-manager";
 
   src = fetchPypi {

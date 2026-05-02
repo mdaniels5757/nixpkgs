@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "datasette-publish-fly";
   version = "1.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "simonw";

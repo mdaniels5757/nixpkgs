@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "tlv8";
   version = "0.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   # pypi does not contain test files
   src = fetchFromGitHub {

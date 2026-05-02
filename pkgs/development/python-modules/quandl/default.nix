@@ -21,7 +21,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "quandl";
   version = "3.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) version;

@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "websockify";
   version = "0.13.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "novnc";

@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "pysonos";
   version = "0.0.54";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = !isPy3k;
 

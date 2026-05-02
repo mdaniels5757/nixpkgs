@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "venstarcolortouch";
   version = "0.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

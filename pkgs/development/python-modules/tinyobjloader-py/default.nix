@@ -7,7 +7,7 @@
 
 buildPythonPackage {
   pname = "tinyobjloader-py";
-  format = "setuptools";
+  pyproject = true;
   inherit (tinyobjloader) version src;
 
   # Build needs headers from ${src}, setting sourceRoot or fetching from pypi won't work.

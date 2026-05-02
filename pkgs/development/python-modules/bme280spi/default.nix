@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "bme280spi";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

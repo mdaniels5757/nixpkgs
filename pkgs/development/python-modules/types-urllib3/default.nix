@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-urllib3";
   version = "1.26.25.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

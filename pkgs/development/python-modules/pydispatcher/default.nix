@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "2.0.7";
-  format = "setuptools";
+  pyproject = true;
   pname = "pydispatcher";
 
   src = fetchPypi {

@@ -10,7 +10,7 @@
 buildPythonPackage {
   pname = "senf";
   version = "1.5.1-unstable-2026-03-20";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "quodlibet";

@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "ovmfvartool";
   version = "unstable-2022-09-04";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hlandau";

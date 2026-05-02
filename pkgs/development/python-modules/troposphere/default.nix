@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "troposphere";
   version = "4.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "cloudtools";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "socialscan";
   version = "2.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "iojw";

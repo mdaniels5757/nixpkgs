@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "txdbus";
   version = "1.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

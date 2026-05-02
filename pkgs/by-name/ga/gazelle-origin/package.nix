@@ -6,7 +6,7 @@
 python3Packages.buildPythonApplication rec {
   pname = "gazelle-origin";
   version = "3.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "gazelle-origin";

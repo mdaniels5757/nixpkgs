@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "fastimport";
   version = "0.9.16";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

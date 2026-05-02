@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "vsure";
   version = "2.6.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

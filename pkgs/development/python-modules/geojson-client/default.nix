@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "geojson-client";
   version = "0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "exxamalte";

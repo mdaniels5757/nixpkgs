@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "coapthon3";
   version = "1.0.2";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

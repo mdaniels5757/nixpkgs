@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "cccolutils";
   version = "1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "CCColUtils";

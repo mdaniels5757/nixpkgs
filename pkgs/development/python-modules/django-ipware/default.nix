@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "django-ipware";
   version = "7.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

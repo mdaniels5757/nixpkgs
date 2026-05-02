@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "tmb";
   version = "0.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "alemuro";

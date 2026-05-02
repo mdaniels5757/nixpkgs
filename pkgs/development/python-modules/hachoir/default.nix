@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "hachoir";
   version = "3.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "vstinner";

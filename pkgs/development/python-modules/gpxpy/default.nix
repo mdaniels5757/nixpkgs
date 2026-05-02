@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "gpxpy";
   version = "1.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tkrajina";

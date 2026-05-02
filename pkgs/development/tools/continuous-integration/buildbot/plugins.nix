@@ -13,7 +13,7 @@
   # this is exposed for potential plugins to use and for nix-update
   inherit buildbot-pkg;
   www = buildPythonPackage rec {
-    format = "setuptools";
+    pyproject = true;
     pname = "buildbot_www";
     inherit (buildbot-pkg) version;
 
@@ -46,7 +46,7 @@
   console-view = buildPythonPackage rec {
     pname = "buildbot_console_view";
     inherit (buildbot-pkg) version;
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchurl {
       url = "https://github.com/buildbot/buildbot/releases/download/v${version}/${pname}-${version}.tar.gz";
@@ -69,7 +69,7 @@
   waterfall-view = buildPythonPackage rec {
     pname = "buildbot_waterfall_view";
     inherit (buildbot-pkg) version;
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchurl {
       url = "https://github.com/buildbot/buildbot/releases/download/v${version}/${pname}-${version}.tar.gz";
@@ -92,7 +92,7 @@
   grid-view = buildPythonPackage rec {
     pname = "buildbot_grid_view";
     inherit (buildbot-pkg) version;
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchurl {
       url = "https://github.com/buildbot/buildbot/releases/download/v${version}/${pname}-${version}.tar.gz";
@@ -115,7 +115,7 @@
   wsgi-dashboards = buildPythonPackage rec {
     pname = "buildbot_wsgi_dashboards";
     inherit (buildbot-pkg) version;
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchurl {
       url = "https://github.com/buildbot/buildbot/releases/download/v${version}/${pname}-${version}.tar.gz";
@@ -138,7 +138,7 @@
   badges = buildPythonPackage rec {
     pname = "buildbot_badges";
     inherit (buildbot-pkg) version;
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchurl {
       url = "https://github.com/buildbot/buildbot/releases/download/v${version}/${pname}-${version}.tar.gz";

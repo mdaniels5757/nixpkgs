@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyplaato";
   version = "0.0.19";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

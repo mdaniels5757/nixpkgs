@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "gekitchen";
   version = "0.2.19";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ajmarks";

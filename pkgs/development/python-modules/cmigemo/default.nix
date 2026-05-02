@@ -11,7 +11,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "cmigemo";
   version = "0.1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

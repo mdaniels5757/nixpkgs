@@ -9,7 +9,7 @@ buildPythonPackage (finalAttrs: {
   pname = "pyotp";
   version = "2.9.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

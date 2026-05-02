@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "retry-decorator";
   version = "1.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pnpnpn";

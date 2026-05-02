@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "callee";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Xion";

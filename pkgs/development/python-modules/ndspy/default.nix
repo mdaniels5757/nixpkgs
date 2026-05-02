@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ndspy";
   version = "4.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "RoadrunnerWMC";

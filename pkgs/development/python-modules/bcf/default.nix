@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "bcf";
   version = "1.9.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hardwario";

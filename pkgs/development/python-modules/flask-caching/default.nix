@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "flask-caching";
   version = "2.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "flask_caching";

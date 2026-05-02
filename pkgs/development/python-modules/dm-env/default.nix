@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "dm-env";
   version = "1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "derpconf";
   version = "0.8.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

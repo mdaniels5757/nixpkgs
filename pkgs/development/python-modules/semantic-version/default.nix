@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "semantic-version";
   version = "2.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "semantic_version";

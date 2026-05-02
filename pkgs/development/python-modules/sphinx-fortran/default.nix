@@ -12,7 +12,7 @@
 buildPythonPackage {
   pname = "sphinx-fortran";
   version = "unstable-2022-03-02";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "VACUMM";

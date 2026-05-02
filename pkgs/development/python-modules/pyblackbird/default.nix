@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyblackbird";
   version = "0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "koolsb";

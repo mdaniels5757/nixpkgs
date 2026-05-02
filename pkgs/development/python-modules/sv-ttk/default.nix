@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sv-ttk";
   version = "2.6.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

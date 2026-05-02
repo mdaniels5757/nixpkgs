@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "yaswfp";
   version = "unstable-20210331";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "facundobatista";

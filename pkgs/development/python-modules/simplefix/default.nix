@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "simplefix";
   version = "1.0.17";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "simplefix";

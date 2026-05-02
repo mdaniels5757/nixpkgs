@@ -23,7 +23,7 @@
 buildPythonPackage rec {
   pname = "nltk";
   version = "3.9.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

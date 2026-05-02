@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "nbsmoke";
   version = "0.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

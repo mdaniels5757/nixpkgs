@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pcpp";
   version = "1.30";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ned14";

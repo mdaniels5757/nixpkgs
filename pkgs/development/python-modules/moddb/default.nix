@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "moddb";
   version = "0.12.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ClementJ18";

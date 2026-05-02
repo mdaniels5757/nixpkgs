@@ -19,7 +19,7 @@
 buildPythonPackage rec {
   pname = "pysc2";
   version = "4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "deepmind";

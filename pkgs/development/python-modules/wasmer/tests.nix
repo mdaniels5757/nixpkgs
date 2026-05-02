@@ -8,7 +8,7 @@
 }:
 
 buildPythonPackage {
-  format = "setuptools";
+  pyproject = true;
   pname = "wasmer-tests";
   inherit (wasmer) version;
 

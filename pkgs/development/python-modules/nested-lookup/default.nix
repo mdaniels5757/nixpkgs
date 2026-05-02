@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "nested-lookup";
   version = "0.2.25";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

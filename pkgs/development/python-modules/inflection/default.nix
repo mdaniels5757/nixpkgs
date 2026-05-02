@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "inflection";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

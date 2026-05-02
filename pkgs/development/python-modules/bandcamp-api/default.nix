@@ -13,7 +13,7 @@ buildPythonPackage rec {
   pname = "bandcamp-api";
   version = "0.2.3";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "bandcamp_api";

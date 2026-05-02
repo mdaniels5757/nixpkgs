@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "mutesync";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

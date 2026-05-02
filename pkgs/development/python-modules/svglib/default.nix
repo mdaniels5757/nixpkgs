@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "svglib";
   version = "1.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

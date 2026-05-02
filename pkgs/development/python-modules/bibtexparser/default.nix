@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "bibtexparser";
   version = "1.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sciunto-org";

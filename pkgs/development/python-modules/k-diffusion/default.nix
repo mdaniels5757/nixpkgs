@@ -25,7 +25,7 @@
 buildPythonPackage rec {
   pname = "k-diffusion";
   version = "0.1.1.post1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "crowsonkb";

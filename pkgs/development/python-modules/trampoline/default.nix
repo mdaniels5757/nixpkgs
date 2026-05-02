@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "trampoline";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   # only wheel on pypi, no tags on git
   src = fetchFromGitLab {

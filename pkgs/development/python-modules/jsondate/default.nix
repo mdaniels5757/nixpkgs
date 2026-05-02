@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "0.1.3";
-  format = "setuptools";
+  pyproject = true;
   pname = "jsondate";
 
   src = fetchFromGitHub {

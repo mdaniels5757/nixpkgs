@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "python-uinput";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

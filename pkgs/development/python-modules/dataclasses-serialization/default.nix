@@ -16,7 +16,7 @@ buildPythonPackage rec {
 
   # upstream requires >= 3.6 but only 3.7 includes dataclasses
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "madman-bob";

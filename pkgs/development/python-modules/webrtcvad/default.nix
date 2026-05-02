@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "webrtcvad";
   version = "2.0.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

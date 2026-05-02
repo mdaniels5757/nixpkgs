@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "bacpypes";
   version = "0.18.6";
-  format = "setuptools";
+  pyproject = true;
 
   # uses the removed asyncore module
   disabled = pythonAtLeast "3.12";

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pad4pi";
   version = "1.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

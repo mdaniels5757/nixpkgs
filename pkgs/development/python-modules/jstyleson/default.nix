@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "jstyleson";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "linjackson78";

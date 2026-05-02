@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pcodedmp";
   version = "1.2.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bontchev";

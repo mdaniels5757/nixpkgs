@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "volvooncall";
   version = "0.10.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "molobrakos";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "autograd-gamma";
   version = "0.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CamDavidsonPilon";

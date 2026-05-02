@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pylnk3";
   version = "0.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

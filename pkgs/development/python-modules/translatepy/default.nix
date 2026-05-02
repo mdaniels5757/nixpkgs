@@ -13,7 +13,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "translatepy";
   version = "2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Animenosekai";

@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "static3";
   version = "0.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "rmohr";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "black-macchiato";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wbolster";

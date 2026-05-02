@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "update-checker";
   version = "0.18.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

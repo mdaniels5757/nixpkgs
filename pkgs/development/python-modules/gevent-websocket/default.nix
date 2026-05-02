@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "gevent-websocket";
   version = "0.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

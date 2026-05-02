@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "munkres";
   version = "1.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = !isPy3k;
 

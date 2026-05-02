@@ -7,7 +7,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "kerbrute";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

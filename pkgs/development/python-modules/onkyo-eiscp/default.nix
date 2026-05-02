@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "onkyo-eiscp";
   version = "1.2.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

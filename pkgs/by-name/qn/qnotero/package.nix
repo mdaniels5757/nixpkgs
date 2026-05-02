@@ -10,7 +10,7 @@ python3Packages.buildPythonPackage rec {
   pname = "qnotero";
 
   version = "2.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ealbiter";

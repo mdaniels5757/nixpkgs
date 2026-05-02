@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "glad";
   version = "0.1.36";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

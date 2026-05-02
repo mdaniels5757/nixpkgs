@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pdf2image";
   version = "1.17.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

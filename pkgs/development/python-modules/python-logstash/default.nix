@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "python-logstash";
   version = "0.4.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

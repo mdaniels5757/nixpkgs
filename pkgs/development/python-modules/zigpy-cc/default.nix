@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "zigpy-cc";
   version = "0.5.2";
-  format = "setuptools";
+  pyproject = true;
 
   # https://github.com/Martiusweb/asynctest/issues/152
   # broken by upstream python bug with asynctest and

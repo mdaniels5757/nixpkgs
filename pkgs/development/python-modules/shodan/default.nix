@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "shodan";
   version = "1.31.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

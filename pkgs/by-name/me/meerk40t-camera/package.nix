@@ -7,7 +7,7 @@
 python3Packages.buildPythonPackage rec {
   pname = "meerk40t-camera";
   version = "0.1.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

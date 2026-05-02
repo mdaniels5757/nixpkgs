@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "brelpy";
   version = "0.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "clf";
   version = "0.5.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

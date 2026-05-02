@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "minimal-snowplow-tracker";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

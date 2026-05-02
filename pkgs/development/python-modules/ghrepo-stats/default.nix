@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "ghrepo-stats";
   version = "0.5.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mrbean-bremen";

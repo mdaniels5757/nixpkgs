@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "empy";
   version = "4.2";
-  format = "setuptools";
+  pyproject = true;
   src = fetchPypi {
     inherit pname version;
     hash = "sha256-hvFeHal0Pnmi6bLLrPGhPQt/sYNbYlTrJTyXi3Iof08=";

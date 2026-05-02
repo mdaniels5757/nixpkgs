@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "flask-elastic";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Flask-Elastic";

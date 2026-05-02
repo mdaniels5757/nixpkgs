@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "f5-icontrol-rest";
   version = "1.3.16";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "F5Networks";

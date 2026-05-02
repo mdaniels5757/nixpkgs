@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pythonegardia";
   version = "1.0.52";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jeroenterheerdt";

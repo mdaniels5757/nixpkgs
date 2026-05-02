@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "linetable";
   version = "0.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "amol-";

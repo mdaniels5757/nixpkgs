@@ -10,7 +10,7 @@
 
 buildPythonPackage {
   pname = "ndtypes";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
   inherit (libndtypes) version src meta;
 

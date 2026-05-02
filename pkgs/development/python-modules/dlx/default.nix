@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "dlx";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   # untagged releases
   src = fetchFromGitHub {

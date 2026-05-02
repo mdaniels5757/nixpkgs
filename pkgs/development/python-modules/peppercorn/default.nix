@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "peppercorn";
   version = "0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

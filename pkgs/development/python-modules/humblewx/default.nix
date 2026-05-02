@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "humblewx";
   version = "0.2.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "thetimelineproj";

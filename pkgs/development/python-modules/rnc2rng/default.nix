@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "rnc2rng";
   version = "2.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "openttd-nml";
   version = "0.8.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "OpenTTD";

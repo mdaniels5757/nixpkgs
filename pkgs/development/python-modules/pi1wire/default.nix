@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "pi1wire";
   version = "0.3.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ushiboy";

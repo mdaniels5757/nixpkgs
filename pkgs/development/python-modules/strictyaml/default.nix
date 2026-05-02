@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "strictyaml";
   version = "1.7.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

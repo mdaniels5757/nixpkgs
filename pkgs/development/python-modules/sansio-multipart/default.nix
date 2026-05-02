@@ -11,7 +11,7 @@ buildPythonPackage rec {
 
   disabled = isPy27;
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "sansio_multipart";

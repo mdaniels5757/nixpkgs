@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "libarchive-c";
   version = "5.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Changaco";

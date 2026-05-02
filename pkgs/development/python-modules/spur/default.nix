@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "spur";
   version = "0.3.23";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mwilliamson";

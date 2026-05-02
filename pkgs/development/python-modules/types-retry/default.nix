@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-retry";
   version = "0.9.9.20250322";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "types_retry";

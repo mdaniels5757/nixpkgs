@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "aiopylgtv";
   version = "0.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bendavid";

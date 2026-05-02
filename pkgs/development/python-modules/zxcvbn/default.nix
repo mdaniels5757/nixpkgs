@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "zxcvbn";
   version = "4.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   # no tests included in PyPI tarball
   src = fetchFromGitHub {

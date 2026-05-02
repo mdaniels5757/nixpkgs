@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "robot-detection";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

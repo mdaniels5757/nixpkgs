@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "md2gemini";
   version = "1.9.1";
-  format = "setuptools";
+  pyproject = true;
 
   propagatedBuildInputs = [
     mistune

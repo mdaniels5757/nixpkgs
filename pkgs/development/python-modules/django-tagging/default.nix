@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "django-tagging";
   version = "0.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

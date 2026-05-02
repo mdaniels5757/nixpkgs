@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "dbus-python-client-gen";
   version = "0.8.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "stratis-storage";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "fastentrypoints";
   version = "0.12";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

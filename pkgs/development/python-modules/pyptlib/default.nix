@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyptlib";
   version = "0.0.6";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPyPy || isPy3k;
 
   src = fetchPypi {

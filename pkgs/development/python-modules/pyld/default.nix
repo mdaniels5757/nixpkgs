@@ -26,7 +26,7 @@ in
 buildPythonPackage rec {
   pname = "pyld";
   version = "1.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "digitalbazaar";

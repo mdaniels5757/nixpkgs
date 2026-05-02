@@ -10,7 +10,7 @@ with python3.pkgs;
 buildPythonApplication (finalAttrs: {
   pname = "noteshrink";
   version = "0.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mzucker";

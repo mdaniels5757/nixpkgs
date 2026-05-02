@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "httpx-ntlm";
   version = "1.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "httpx_ntlm";

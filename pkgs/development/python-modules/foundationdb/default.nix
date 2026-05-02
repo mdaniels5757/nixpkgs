@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "foundationdb";
   version = foundationdb.version;
-  format = "setuptools";
+  pyproject = true;
 
   src = foundationdb.pythonsrc;
   unpackCmd = "tar xf $curSrc";

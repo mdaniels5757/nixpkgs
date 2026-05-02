@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "flask-restful";
   version = "0.3.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Flask-RESTful";

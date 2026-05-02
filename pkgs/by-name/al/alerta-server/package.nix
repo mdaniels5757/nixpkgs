@@ -7,7 +7,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "alerta-server";
   version = "9.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

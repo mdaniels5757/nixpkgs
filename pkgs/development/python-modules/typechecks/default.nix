@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "typechecks";
   version = "unstable-2023-07-13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "openvax";

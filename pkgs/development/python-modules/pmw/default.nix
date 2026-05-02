@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pmw";
   version = "2.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Pmw";

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "simplejson";
   version = "3.20.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "simplejson";

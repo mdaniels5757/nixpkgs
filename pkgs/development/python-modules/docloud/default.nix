@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "docloud";
   version = "1.0.375";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

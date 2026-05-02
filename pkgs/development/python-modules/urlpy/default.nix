@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "urlpy";
   version = "0.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nexB";

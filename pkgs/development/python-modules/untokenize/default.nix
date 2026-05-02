@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "untokenize";
   version = "0.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   # https://github.com/myint/untokenize/issues/4
   disabled = pythonAtLeast "3.14";

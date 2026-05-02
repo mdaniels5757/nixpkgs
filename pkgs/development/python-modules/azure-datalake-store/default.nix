@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "azure-datalake-store";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "azure_datalake_store";

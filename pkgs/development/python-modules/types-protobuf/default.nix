@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "types-protobuf";
   version = "6.32.1.20260221";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "types_protobuf";

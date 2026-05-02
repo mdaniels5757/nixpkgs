@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "envoy-utils";
   version = "0.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "envoy_utils";

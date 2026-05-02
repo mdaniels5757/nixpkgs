@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "requests-kerberos";
   version = "0.15.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "requests";

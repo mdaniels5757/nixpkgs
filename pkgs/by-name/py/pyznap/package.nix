@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "pyznap";
   version = "1.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

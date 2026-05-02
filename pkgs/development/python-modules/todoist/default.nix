@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "todoist-python";
   version = "8.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

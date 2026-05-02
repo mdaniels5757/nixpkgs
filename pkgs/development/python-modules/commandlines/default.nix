@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "commandlines";
   version = "0.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   # PyPI source tarballs omit tests, fetch from Github instead
   src = fetchFromGitHub {

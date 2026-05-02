@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "cfn-flip";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "awslabs";

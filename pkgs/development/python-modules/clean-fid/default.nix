@@ -16,7 +16,7 @@
 buildPythonPackage {
   pname = "clean-fid";
   version = "0.1.35";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "GaParmar";

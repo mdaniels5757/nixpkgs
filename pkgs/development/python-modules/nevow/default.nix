@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "nevow";
   version = "0.14.5";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy3k;
 
   src = fetchPypi {

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "user-agents";
   version = "2.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   # PyPI is missing devices.json
   src = fetchFromGitHub {

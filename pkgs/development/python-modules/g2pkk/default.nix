@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "g2pkk";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

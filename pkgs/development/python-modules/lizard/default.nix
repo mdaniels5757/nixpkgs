@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "lizard";
   version = "1.22.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "terryyin";

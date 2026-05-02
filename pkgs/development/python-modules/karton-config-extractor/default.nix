@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "karton-config-extractor";
   version = "2.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CERT-Polska";

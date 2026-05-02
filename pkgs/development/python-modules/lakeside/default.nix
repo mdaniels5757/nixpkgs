@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "lakeside";
   version = "0.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nkgilley";

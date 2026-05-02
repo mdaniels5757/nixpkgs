@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pyu2f";
   version = "0.1.5a";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "google";

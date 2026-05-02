@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "yoyo-migrations";
   version = "8.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

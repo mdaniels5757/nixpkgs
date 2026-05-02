@@ -11,7 +11,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "avion";
   version = "0.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

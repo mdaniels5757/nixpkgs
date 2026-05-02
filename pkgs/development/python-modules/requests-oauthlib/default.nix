@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "requests-oauthlib";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

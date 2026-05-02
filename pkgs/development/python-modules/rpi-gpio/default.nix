@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "rpi-gpio";
   version = "0.7.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "RPi.GPIO";

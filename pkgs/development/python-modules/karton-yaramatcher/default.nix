@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "karton-yaramatcher";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CERT-Polska";

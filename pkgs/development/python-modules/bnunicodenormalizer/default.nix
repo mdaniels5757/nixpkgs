@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "bnunicodenormalizer";
   version = "0.1.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "python-decouple";
   version = "3.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "HBNetwork";

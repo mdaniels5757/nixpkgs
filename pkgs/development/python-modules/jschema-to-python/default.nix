@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "jschema-to-python";
   version = "1.2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "jschema_to_python";

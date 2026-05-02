@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "twitterapi";
   version = "2.8.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "geduldig";

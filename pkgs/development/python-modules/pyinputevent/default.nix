@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "pyinputevent";
   version = "2016-10-18";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ntzrmtthihu777";

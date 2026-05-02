@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "scour";
   version = "0.38.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

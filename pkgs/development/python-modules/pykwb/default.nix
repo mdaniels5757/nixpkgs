@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pykwb";
   version = "0.0.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

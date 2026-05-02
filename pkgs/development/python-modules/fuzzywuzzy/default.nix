@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "fuzzywuzzy";
   version = "0.18.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

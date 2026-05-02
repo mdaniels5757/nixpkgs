@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "opensimplex";
   version = "0.4.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "lmas";

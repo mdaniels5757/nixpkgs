@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "iammeter";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -11,7 +11,7 @@ buildPythonPackage rec {
   pname = "azure-mgmt-msi";
   version = "7.1.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "azure_mgmt_msi";

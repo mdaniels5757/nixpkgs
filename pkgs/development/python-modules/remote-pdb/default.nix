@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "remote-pdb";
   version = "2.1.0";
-  format = "setuptools";
+  pyproject = true;
   src = fetchFromGitHub {
     owner = "ionelmc";
     repo = "python-remote-pdb";

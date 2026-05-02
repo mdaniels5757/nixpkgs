@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pylatexenc";
   version = "2.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "phfaist";

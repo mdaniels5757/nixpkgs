@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "csv2md";
   version = "1.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "lzakharov";

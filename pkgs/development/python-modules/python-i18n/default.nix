@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "python-i18n";
   version = "0.3.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "danhper";

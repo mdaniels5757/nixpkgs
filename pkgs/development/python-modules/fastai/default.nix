@@ -18,7 +18,7 @@
 buildPythonPackage rec {
   pname = "fastai";
   version = "2.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -10,7 +10,7 @@ buildPythonPackage rec {
   pname = "jsonmerge";
   version = "1.9.2";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

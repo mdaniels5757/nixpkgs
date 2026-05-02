@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-pillow";
   version = "10.2.0.20240822";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

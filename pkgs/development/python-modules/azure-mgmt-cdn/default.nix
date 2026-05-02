@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-cdn";
   version = "13.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "kotsu";
   version = "0.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "datavaluepeople";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "asyncio-throttle";
   version = "1.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hallazzang";

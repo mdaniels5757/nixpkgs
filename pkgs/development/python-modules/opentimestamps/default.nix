@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "opentimestamps";
   version = "0.4.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "opentimestamps";

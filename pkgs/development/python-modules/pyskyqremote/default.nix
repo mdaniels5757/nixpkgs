@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyskyqremote";
   version = "0.3.26";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "RogerSelwyn";

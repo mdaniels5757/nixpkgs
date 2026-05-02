@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "1.16";
-  format = "setuptools";
+  pyproject = true;
   pname = "patch";
 
   src = fetchzip {

@@ -9,7 +9,7 @@
 buildPythonPackage {
   inherit (pkgs.fasttext) pname version src;
 
-  format = "setuptools";
+  pyproject = true;
 
   buildInputs = [ pybind11 ];
 

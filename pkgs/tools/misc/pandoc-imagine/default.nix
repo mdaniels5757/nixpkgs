@@ -9,7 +9,7 @@
 buildPythonApplication rec {
   pname = "pandoc-imagine";
   version = "0.1.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "imagine";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "click-help-colors";
   version = "0.9.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

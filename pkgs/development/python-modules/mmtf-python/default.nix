@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "mmtf-python";
   version = "1.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

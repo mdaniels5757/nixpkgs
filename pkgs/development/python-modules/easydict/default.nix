@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "easydict";
   version = "1.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

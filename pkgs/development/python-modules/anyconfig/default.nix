@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "anyconfig";
   version = "0.14.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ssato";

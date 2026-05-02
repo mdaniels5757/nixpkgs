@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "geopy";
   version = "2.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "geopy";

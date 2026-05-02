@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   pname = "omorfi";
-  format = "setuptools";
+  pyproject = true;
   inherit (pkgs.omorfi) src version;
 
   sourceRoot = "${src.name}/src/python";

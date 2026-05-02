@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pleroma-bot";
   version = "0.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "robertoszek";

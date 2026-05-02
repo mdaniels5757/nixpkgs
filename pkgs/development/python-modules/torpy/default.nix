@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "torpy";
   version = "1.1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "torpyorg";

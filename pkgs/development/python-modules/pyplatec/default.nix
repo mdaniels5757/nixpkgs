@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyplatec";
   version = "1.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

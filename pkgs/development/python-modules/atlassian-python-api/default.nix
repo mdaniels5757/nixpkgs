@@ -18,7 +18,7 @@
 buildPythonPackage rec {
   pname = "atlassian-python-api";
   version = "4.0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "atlassian-api";

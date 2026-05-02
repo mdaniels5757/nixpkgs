@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "blobfile";
   version = "3.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "christopher-hesse";

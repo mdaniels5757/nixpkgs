@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "pycrypto";
   version = pycryptodome.version;
-  format = "setuptools";
+  pyproject = true;
 
   # Cannot build wheel otherwise (zip 1980 issue)
   env.SOURCE_DATE_EPOCH = 315532800;

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "datefinder";
   version = "0.7.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "akoumjian";

@@ -13,7 +13,7 @@ buildPythonPackage rec {
   pname = "bond-async";
   version = "0.2.1";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bondhome";

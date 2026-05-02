@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "py3exiv2";
   version = "0.12.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

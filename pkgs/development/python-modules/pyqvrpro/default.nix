@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pyqvrpro";
   version = "0.52";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "oblogic7";

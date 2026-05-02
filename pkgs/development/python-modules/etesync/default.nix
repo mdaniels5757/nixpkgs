@@ -28,7 +28,7 @@
 buildPythonPackage rec {
   pname = "etesync";
   version = "0.12.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

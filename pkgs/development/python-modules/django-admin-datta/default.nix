@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "django-admin-datta";
   version = "1.0.19";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "discogs-client";
   version = "2.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "joalla";

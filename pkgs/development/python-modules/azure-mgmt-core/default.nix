@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   version = "1.6.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "azure-mgmt-core";
 
   src = fetchPypi {

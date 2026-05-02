@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "kconfiglib";
   version = "14.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

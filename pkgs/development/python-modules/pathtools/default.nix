@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pathtools";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   # imp and distuils usage, last commit in 2016
   disabled = pythonAtLeast "3.12";

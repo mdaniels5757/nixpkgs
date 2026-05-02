@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "sacn";
   version = "1.11.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

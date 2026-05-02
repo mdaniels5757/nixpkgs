@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "python-family-hub-local";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

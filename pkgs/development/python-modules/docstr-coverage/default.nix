@@ -14,7 +14,7 @@ in
 buildPythonPackage {
   pname = "docstr-coverage";
   inherit version;
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "HunterMcGushion";

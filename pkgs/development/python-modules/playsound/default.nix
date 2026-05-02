@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "playsound";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "TaylorSMarks";

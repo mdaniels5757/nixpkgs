@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication rec {
   pname = "gitfs";
   version = "0.5.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "PressLabs";

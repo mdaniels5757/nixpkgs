@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "odfpy";
   version = "1.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

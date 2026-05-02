@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "iocextract";
   version = "1.16.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "InQuest";

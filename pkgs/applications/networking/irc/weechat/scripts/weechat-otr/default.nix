@@ -18,7 +18,7 @@ let
   pycrypto = python3Packages.buildPythonPackage rec {
     pname = "pycrypto";
     version = "2.6.1-13.1";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchgit {
       url = "https://salsa.debian.org/sramacher/python-crypto.git";

@@ -11,7 +11,7 @@
 
 buildPythonPackage rec {
   version = src.version;
-  format = "setuptools";
+  pyproject = true;
   pname = "sage-docbuild";
   src = sage-src;
 

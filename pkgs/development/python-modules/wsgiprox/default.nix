@@ -9,7 +9,7 @@
 buildPythonPackage {
   pname = "wsgiprox";
   version = "1.5.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "webrecorder";

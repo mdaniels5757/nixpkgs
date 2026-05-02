@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "crownstone-core";
   version = "3.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "crownstone";

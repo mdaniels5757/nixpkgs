@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "jsbeautifier";
   version = "1.15.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

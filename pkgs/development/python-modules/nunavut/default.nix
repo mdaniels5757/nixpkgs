@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "nunavut";
   version = "2.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

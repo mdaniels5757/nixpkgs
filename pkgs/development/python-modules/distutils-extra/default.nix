@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "distutils-extra";
   version = "2.50";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchurl {
     url = "https://salsa.debian.org/python-team/modules/python-distutils-extra/-/archive/${version}/python-${pname}-${version}.tar.bz2";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "convertdate";
   version = "2.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "fitnr";

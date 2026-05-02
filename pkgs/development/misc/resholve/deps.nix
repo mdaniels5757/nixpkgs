@@ -22,7 +22,7 @@ rec {
   configargparse = python27.pkgs.buildPythonPackage rec {
     pname = "configargparse";
     version = "1.5.3";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "bw2";

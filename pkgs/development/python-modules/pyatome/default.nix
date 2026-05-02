@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyatome";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pyAtome";

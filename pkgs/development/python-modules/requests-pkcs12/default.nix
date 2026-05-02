@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "requests-pkcs12";
   version = "1.27";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "m-click";

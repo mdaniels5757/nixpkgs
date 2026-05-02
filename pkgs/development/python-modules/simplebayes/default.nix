@@ -10,7 +10,7 @@
 buildPythonPackage {
   pname = "simplebayes";
   version = "1.5.8";
-  format = "setuptools";
+  pyproject = true;
 
   # Use GitHub instead of pypi, because it contains tests.
   src = fetchFromGitHub {

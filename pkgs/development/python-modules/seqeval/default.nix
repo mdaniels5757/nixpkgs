@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "seqeval";
   version = "1.2.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "chakki-works";

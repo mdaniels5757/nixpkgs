@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pencompy";
   version = "0.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

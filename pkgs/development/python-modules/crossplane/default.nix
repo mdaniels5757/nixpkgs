@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "crossplane";
   version = "0.5.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nginxinc";

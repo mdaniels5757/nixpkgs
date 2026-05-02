@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pynetgear";
   version = "0.10.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "MatMaul";

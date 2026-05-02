@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "enochecker-core";
   version = "0.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

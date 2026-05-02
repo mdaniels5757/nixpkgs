@@ -8,7 +8,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "html5validator";
   version = "0.4.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "svenkreiss";

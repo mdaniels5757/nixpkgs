@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "jsonpatch";
   version = "1.33";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "stefankoegl";

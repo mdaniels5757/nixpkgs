@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "fpdf";
   version = "1.7.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

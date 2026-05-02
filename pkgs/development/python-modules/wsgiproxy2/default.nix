@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "wsgiproxy2";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "gawel";

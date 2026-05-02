@@ -9,7 +9,7 @@ with python3Packages;
 buildPythonPackage (finalAttrs: {
   pname = "octave-kernel";
   version = "0.34.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "octave_kernel";

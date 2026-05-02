@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "umodbus";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "AdvancedClimateSystems";

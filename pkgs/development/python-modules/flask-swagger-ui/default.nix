@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "flask-swagger-ui";
   version = "5.21.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "flask_swagger_ui";

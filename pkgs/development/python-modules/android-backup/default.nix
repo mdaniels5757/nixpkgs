@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "android-backup";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bluec0re";

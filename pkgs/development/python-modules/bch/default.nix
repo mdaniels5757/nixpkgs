@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "bch";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hardwario";

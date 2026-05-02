@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "aliyun-python-sdk-sts";
   version = "3.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

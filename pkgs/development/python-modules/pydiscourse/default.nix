@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pydiscourse";
   version = "1.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pydiscourse";

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pylacrosse";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "hthiery";

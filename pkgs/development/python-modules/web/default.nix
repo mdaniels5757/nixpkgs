@@ -14,7 +14,7 @@
 
 buildPythonPackage rec {
   version = "0.62";
-  format = "setuptools";
+  pyproject = true;
   pname = "web.py";
 
   src = fetchPypi {

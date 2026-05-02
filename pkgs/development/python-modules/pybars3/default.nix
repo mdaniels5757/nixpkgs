@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pybars3";
   version = "0.9.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

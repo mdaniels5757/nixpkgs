@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "injector";
   version = "0.24.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "python-injector";

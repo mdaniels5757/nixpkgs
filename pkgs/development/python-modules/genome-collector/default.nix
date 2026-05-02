@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "genome_collector";
   version = "0.1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

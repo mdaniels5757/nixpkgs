@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "datetime";
   version = "6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "zopefoundation";

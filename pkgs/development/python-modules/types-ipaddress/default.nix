@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-ipaddress";
   version = "1.0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

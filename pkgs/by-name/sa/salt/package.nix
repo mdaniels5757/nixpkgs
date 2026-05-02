@@ -13,7 +13,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "salt";
   version = "3007.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

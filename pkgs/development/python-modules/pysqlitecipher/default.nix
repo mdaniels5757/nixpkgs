@@ -10,7 +10,7 @@ buildPythonPackage rec {
   pname = "pysqlitecipher";
   version = "0.22";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

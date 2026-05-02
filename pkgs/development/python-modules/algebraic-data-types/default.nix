@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "algebraic-data-types";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jspahrsummers";

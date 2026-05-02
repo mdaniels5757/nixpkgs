@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyprind";
   version = "2.11.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyPrind";

@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "srptools";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

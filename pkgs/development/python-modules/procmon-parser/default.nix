@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "procmon-parser";
   version = "0.3.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "eronnen";

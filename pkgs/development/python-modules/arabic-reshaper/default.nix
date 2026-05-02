@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "arabic-reshaper";
   version = "3.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mpcabd";

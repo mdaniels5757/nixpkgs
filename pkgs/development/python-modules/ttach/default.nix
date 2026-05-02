@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "ttach";
   version = "0.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "qubvel";

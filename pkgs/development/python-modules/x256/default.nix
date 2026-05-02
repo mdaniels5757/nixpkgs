@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "x256";
   version = "0.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

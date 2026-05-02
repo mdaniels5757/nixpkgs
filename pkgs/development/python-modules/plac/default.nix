@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "plac";
   version = "1.4.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ialbert";

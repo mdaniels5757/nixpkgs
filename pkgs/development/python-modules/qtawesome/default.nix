@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "qtawesome";
   version = "1.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "spyder-ide";

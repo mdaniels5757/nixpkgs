@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "torchinfo";
   version = "1.8.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "TylerYep";

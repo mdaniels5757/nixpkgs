@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "cachey";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
   src = fetchFromGitHub {
     owner = "dask";
     repo = "cachey";

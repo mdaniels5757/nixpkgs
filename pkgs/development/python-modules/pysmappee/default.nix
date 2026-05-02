@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pysmappee";
   version = "0.2.29";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "smappee";

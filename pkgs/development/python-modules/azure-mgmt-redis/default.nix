@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-redis";
   version = "14.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

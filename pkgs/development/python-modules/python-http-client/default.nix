@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "python-http-client";
   version = "3.3.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sendgrid";

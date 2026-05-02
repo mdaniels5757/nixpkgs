@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "psutil-home-assistant";
   version = "0.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "home-assistant-libs";

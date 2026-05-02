@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "pydes";
   version = "unstable-2019-01-08";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "twhiteman";

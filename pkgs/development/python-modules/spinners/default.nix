@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "spinners";
   version = "0.0.24";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

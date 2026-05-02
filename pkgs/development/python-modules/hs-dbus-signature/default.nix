@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "hs-dbus-signature";
   version = "0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -18,7 +18,7 @@
 buildPythonPackage rec {
   pname = "django-postgresql-netfields";
   version = "1.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jimfunk";

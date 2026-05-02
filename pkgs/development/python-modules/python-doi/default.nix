@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "python-doi";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "papis";

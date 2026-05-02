@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "gpib-ctypes";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "gpib_ctypes";

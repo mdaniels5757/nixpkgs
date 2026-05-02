@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "dissononce";
   version = "0.34.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tgalal";

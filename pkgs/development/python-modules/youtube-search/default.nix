@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "youtube-search";
   version = "2.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

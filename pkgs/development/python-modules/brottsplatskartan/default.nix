@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "brottsplatskartan";
   version = "1.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "chrillux";

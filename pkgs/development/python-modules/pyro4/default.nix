@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pyro4";
   version = "4.82";
-  format = "setuptools";
+  pyproject = true;
 
   # No support Python >= 3.11
   # https://github.com/irmen/Pyro4/issues/246

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "awesome-slugify";
   version = "1.6.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

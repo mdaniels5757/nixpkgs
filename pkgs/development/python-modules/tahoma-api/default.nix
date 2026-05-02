@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "tahoma-api";
   version = "0.0.17";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "philklei";

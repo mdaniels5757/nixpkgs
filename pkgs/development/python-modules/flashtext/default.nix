@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "flashtext";
   version = "2.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

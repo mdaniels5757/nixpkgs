@@ -18,7 +18,7 @@
 buildPythonPackage rec {
   pname = "adb-shell";
   version = "0.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = !isPy3k;
 

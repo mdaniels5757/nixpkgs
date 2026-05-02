@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "dkimpy";
   version = "1.1.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

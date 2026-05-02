@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "setoptconf-tmp";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

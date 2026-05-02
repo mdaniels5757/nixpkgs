@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "djangorestframework-csv";
   version = "3.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mjumbewu";

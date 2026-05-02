@@ -10,7 +10,7 @@
 buildPythonPackage {
   pname = "pytest-pudb";
   version = "0.8.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wronglink";

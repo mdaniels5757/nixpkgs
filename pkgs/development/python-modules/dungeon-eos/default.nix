@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "dungeon-eos";
   version = "0.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "SkyTemple";

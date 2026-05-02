@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "python-mpv-jsonipc";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "iwalton3";

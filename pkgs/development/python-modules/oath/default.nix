@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "oath";
   version = "1.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "progressbar";
   version = "2.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -10,7 +10,7 @@
 buildPythonPackage {
   pname = "showit";
   version = "1.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "freeman-lab";

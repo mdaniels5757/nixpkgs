@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "adax";
   version = "0.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Danielhiversen";

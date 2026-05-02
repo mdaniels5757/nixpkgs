@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "syncer";
   version = "2.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "miyakogi";

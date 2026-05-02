@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pubnubsub-handler";
   version = "1.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

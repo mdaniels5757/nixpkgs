@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "aliyun-python-sdk-config";
   version = "2.2.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

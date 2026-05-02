@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "proton-client";
   version = "0.7.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ProtonMail";

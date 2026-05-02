@@ -11,7 +11,7 @@ python3.pkgs.buildPythonApplication rec {
   pname = "oncall";
   # Using newer revision for Falcon 4 patch to work
   version = "0-unstable-2025-04-15";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "linkedin";

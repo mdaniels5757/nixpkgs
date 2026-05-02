@@ -18,7 +18,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "plugp100";
   version = "5.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "petretiandrea";

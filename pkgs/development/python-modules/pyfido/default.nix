@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyfido";
   version = "2.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

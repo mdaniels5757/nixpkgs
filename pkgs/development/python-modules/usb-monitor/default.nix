@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "usb-monitor";
   version = "1.23";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

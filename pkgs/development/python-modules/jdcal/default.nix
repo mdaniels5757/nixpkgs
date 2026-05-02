@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "jdcal";
   version = "1.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -14,7 +14,7 @@ buildPythonApplication rec {
   pname = "gdbgui";
 
   version = "0.15.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   buildInputs = [ gdb ];
   propagatedBuildInputs = [

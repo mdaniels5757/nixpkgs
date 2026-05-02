@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ultraheat-api";
   version = "0.5.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "ultraheat_api";

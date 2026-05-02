@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "graphql-server-core";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "graphql-python";

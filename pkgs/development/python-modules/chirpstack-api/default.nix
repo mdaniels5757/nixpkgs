@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "chirpstack-api";
   version = "3.12.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "brocaar";

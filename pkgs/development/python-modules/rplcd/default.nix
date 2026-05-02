@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "rplcd";
   version = "1.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

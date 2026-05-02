@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "flask-testing";
   version = "0.8.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Flask-Testing";

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "messagebird";
   version = "2.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "messagebird";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pytap2";
   version = "2.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "johnthagen";

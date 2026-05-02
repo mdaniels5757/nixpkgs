@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "datadiff";
   version = "2.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

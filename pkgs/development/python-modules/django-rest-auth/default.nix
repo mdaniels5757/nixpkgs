@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "django-rest-auth";
   version = "0.9.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Tivix";

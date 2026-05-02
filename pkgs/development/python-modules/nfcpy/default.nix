@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "nfcpy";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nfcpy";

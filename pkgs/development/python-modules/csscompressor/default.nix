@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "csscompressor";
   version = "0.9.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "bleach-allowlist";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

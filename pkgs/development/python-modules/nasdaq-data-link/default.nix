@@ -20,7 +20,7 @@
 buildPythonPackage rec {
   pname = "nasdaq-data-link";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Nasdaq";

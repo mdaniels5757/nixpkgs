@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "syslog-rfc5424-formatter";
   version = "1.2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "easypost";

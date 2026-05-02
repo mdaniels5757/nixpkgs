@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "debts";
   version = "0.5";
-  format = "setuptools";
+  pyproject = true;
 
   # pypi does not ship tests
   src = fetchFromGitLab {

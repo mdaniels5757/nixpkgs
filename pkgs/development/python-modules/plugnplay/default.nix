@@ -6,7 +6,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "plugnplay";
   version = "0.5.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "arpy";
   version = "2.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "viraptor";

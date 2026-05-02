@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyasn";
   version = "1.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

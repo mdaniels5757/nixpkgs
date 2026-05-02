@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "lomond";
   version = "0.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wildfoundry";

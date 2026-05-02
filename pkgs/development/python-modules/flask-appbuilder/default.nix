@@ -27,7 +27,7 @@
 buildPythonPackage rec {
   pname = "flask-appbuilder";
   version = "5.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Flask-AppBuilder";

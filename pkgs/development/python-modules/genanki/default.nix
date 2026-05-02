@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "genanki";
   version = "0.13.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

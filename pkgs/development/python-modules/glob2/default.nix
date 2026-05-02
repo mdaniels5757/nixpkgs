@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "glob2";
   version = "0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

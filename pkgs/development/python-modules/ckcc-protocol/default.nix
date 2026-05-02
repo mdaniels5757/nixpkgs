@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "ckcc-protocol";
   version = "1.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

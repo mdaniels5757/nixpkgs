@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "obfsproxy";
   version = "0.2.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchgit {
     url = "https://git.torproject.org/pluggable-transports/obfsproxy.git";

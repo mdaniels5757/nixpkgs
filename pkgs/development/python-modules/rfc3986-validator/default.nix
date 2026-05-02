@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "rfc3986-validator";
   version = "0.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "rfc3986_validator";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "anonip";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "DigitaleGesellschaft";

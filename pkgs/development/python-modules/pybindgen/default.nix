@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pybindgen";
   version = "0.22.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyBindGen";

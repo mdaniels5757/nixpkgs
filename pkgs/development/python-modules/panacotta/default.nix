@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "panacotta";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "u1f35c";

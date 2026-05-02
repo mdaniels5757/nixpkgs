@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "sentence-splitter";
   version = "1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mediacloud";

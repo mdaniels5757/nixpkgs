@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "unicurses";
   version = "3.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

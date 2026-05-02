@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "base58check";
   version = "1.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "joeblackwaslike";

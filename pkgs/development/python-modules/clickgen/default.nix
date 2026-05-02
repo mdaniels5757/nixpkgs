@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "clickgen";
   version = "2.2.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ful1e5";

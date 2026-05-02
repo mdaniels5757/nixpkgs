@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "ppft";
   version = "1.7.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

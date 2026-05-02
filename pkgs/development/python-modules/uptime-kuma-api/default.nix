@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "uptime-kuma-api";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "uptime_kuma_api";

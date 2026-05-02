@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "proxy-db";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Nekmo";

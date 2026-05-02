@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "python-frontmatter";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "eyeseast";

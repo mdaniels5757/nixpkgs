@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "glfw";
   version = "2.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "FlorianRhiem";

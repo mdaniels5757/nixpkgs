@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "asyncio-rlock";
   version = "0.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "asyncio_rlock";

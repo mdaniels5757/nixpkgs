@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "tidal-dl";
   version = "2022.10.31.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pysftp";
   version = "0.2.9";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPyPy;
 
   src = fetchPypi {

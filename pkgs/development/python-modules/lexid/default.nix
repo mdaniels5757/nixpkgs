@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "lexid";
   version = "2021.1006";
-  format = "setuptools";
+  pyproject = true;
   src = fetchPypi {
     inherit pname version;
     sha256 = "509a3a4cc926d3dbf22b203b18a4c66c25e6473fb7c0e0d30374533ac28bafe5";

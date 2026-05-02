@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "trueskill";
   version = "0.4.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

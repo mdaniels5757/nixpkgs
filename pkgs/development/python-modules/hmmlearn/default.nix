@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "hmmlearn";
   version = "0.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyramid-exclog";
   version = "1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pyramid_exclog";

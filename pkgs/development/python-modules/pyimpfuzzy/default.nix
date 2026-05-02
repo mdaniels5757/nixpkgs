@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyimpfuzzy";
   version = "0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

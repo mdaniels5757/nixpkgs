@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "rapidfuzz-capi";
   version = "1.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "maxbachmann";

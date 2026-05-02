@@ -15,7 +15,7 @@
 
 buildPythonPackage {
   pname = "gumath";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
   inherit (libgumath) src version meta;
 

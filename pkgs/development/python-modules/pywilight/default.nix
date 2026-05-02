@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pywilight";
   version = "0.0.74";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

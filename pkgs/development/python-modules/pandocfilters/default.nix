@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "1.5.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "pandocfilters";
 
   src = fetchPypi {

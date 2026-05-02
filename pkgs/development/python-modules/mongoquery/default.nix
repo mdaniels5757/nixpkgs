@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "mongoquery";
   version = "1.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = isPy27;
 

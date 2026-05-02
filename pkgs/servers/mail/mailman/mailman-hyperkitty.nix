@@ -10,7 +10,7 @@ with python3.pkgs;
 buildPythonPackage (finalAttrs: {
   pname = "mailman-hyperkitty";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

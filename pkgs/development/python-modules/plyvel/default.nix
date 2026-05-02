@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "plyvel";
   version = "1.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

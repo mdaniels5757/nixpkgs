@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "fastecdsa";
   version = "3.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

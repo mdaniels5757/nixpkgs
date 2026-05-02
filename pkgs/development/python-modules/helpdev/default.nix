@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "helpdev";
   version = "0.7.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

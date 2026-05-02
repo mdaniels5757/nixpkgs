@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-toml";
   version = "0.10.8.20240310";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

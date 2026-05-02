@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "2.0.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "path-and-address";
 
   src = fetchFromGitHub {

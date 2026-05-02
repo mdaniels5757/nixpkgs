@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "geniushub-client";
   version = "0.7.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "manzanotti";

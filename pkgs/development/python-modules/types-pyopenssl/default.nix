@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "types-pyopenssl";
   version = "24.1.0.20240722";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "types-pyOpenSSL";

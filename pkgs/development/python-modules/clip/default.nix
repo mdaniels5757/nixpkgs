@@ -12,7 +12,7 @@
 buildPythonPackage {
   pname = "clip";
   version = "unstable-2022-11-17";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "openai";

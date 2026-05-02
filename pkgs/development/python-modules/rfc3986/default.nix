@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "rfc3986";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

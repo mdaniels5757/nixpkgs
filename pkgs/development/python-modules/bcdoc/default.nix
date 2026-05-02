@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "bcdoc";
   version = "0.16.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

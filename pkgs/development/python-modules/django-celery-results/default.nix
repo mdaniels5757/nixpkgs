@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "django-celery-results";
   version = "2.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "django_celery_results";

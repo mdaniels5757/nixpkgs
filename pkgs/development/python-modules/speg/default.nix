@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "speg";
   version = "0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pygdbmi";
   version = "0.11.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "cs01";

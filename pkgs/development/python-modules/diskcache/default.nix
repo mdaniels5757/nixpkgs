@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "diskcache";
   version = "5.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "grantjenks";

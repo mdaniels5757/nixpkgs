@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "flake8-docstrings";
   version = "1.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "PyCQA";

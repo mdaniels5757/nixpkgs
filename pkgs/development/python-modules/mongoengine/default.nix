@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "mongoengine";
   version = "0.29.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

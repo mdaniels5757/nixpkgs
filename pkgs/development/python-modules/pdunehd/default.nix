@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pdunehd";
   version = "1.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "valentinalexeev";

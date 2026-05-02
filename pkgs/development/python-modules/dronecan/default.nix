@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "dronecan";
   version = "1.0.27";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

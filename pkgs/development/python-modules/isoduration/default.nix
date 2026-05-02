@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "isoduration";
   version = "20.11.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bolsote";

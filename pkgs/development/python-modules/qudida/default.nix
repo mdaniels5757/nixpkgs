@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "qudida";
   version = "0.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

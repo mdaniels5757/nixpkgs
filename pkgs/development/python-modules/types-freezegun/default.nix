@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-freezegun";
   version = "1.1.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

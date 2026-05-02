@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "netapp-lib";
   version = "2021.6.25";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "cmarkgfm";
   version = "2025.10.22";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

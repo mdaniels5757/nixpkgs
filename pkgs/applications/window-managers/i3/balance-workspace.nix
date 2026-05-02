@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "i3-balance-workspace";
   version = "1.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

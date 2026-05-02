@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "fastpbkdf2";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   # Fetching from GitHub as tests are missing in PyPI
   src = fetchFromGitHub {

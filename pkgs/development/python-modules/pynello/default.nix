@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pynello";
   version = "2.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pschmitt";

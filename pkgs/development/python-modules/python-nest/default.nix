@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "python-nest";
   version = "4.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

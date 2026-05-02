@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "bond-api";
   version = "0.1.18";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "prystupa";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyment";
   version = "0.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Pyment";

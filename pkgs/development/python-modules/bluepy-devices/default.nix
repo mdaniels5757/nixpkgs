@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "bluepy-devices";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "bluepy_devices";

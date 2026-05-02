@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "ltpycld2";
   version = "0.42";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "LTpycld2";

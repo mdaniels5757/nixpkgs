@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "dockerpty";
   version = "0.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

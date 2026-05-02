@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyrss2gen";
   version = "1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyRSS2Gen";

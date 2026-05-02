@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "opencensus";
   version = "0.11.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

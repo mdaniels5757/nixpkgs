@@ -14,7 +14,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "meshcat";
   version = "0.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

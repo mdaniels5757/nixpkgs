@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pinboard";
   version = "2.1.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "lionheart";

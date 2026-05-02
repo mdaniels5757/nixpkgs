@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "aioserial";
   version = "1.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

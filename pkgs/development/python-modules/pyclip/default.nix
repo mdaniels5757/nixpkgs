@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pyclip";
   version = "0.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "spyoungtech";

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "delorean";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Delorean";

@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "hopcroftkarp";
   version = "1.2.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

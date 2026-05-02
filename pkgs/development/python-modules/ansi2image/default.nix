@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "ansi2image";
   version = "0.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "helviojunior";

@@ -8,7 +8,7 @@
 
 buildPythonApplication rec {
   version = "0.4.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "vimwiki-markdown";
 
   src = fetchPypi {

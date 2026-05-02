@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "typish";
   version = "1.9.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ramonhagenaars";

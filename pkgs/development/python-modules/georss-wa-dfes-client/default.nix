@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "georss-wa-dfes-client";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "exxamalte";

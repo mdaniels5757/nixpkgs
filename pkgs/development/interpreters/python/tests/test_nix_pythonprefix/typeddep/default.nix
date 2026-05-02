@@ -7,7 +7,7 @@ buildPythonPackage {
 
   pname = "typeddep";
   version = "1.3.3.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = lib.fileset.toSource {
     root = ./.;

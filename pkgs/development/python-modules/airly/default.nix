@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "airly";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ak-ambi";

@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "django-scopes";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "raphaelm";

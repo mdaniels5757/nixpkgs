@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "kazoo";
   version = "2.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

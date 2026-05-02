@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "h11";
   version = "0.16.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

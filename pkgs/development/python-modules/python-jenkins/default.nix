@@ -19,7 +19,7 @@
 buildPythonPackage rec {
   pname = "python-jenkins";
   version = "1.8.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "python_jenkins";

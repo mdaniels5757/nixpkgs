@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pure-cdb";
   version = "4.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   # Archive on pypi has no tests.
   src = fetchFromGitHub {

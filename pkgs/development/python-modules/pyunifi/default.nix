@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyunifi";
   version = "2.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "iocapture";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "embedding-reader";
   version = "1.8.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "rom1504";

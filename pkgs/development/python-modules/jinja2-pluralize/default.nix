@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "jinja2-pluralize";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "jinja2_pluralize";

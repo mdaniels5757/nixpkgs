@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "logzero";
   version = "1.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

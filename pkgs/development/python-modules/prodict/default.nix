@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "prodict";
   version = "0.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ramazanpolat";

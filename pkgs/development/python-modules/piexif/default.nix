@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "piexif";
   version = "1.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   # patch does not apply to PyPI sdist due to different line endings
   src = fetchFromGitHub {

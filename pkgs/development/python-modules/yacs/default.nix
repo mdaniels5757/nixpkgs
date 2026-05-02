@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "yacs";
   version = "0.1.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "rbgirshick";

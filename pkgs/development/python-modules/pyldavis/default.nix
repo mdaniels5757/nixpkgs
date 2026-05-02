@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "pyLDAvis";
   version = "3.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bmabey";

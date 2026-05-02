@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pycsdr";
   version = "0.18.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jketterl";

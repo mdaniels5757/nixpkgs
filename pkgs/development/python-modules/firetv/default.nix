@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "firetv";
   version = "1.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

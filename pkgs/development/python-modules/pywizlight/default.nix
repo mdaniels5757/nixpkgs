@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pywizlight";
   version = "0.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sbidy";

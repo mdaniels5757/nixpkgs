@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "asynctest";
   version = "0.13.0";
-  format = "setuptools";
+  pyproject = true;
 
   # Unmaintained and incompatible python 3.11
   disabled = pythonAtLeast "3.11";

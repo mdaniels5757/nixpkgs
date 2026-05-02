@@ -29,7 +29,7 @@ in
 buildPythonPackage rec {
   pname = "online-judge-api-client";
   version = "10.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "online-judge-tools";

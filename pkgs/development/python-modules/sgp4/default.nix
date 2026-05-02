@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sgp4";
   version = "2.25";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 python3Packages.buildPythonApplication {
   pname = "haxor-news";
   version = "unstable-2022-04-22";
-  format = "setuptools";
+  pyproject = true;
 
   # haven't done a stable release in 3+ years, but actively developed
   src = fetchFromGitHub {

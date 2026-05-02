@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ibis";
   version = "3.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dmulholl";

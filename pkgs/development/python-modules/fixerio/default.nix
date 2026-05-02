@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "fixerio";
   version = "1.0.0-alpha";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "amatellanes";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "uptime-kuma-monitor";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "uptime_kuma_monitor";

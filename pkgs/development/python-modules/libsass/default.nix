@@ -11,7 +11,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "libsass";
   version = "0.23.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sass";

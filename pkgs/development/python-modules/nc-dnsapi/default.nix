@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "nc-dnsapi";
   version = "0.1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nbuchwitz";

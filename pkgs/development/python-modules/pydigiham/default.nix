@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pydigiham";
   version = "0.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jketterl";

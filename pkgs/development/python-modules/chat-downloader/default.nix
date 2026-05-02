@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "chat-downloader";
   version = "0.2.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version pname;

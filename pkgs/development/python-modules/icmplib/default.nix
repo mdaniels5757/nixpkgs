@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "icmplib";
   version = "3.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ValentinBELYN";

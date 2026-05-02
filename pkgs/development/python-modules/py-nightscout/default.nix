@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "py-nightscout";
   version = "1.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "marciogranzotto";

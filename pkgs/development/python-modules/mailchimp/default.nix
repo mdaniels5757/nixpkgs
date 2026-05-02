@@ -8,7 +8,7 @@
 
 buildPythonPackage rec {
   version = "2.0.10";
-  format = "setuptools";
+  pyproject = true;
   pname = "mailchimp";
 
   src = fetchPypi {

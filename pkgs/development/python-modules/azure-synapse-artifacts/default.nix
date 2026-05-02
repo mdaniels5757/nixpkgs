@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "azure-synapse-artifacts";
   version = "0.22.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "azure_synapse_artifacts";

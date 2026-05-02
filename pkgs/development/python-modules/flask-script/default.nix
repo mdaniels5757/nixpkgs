@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "flask-script";
   version = "2.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "Flask-Script";

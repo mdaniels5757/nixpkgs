@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pymailgunner";
   version = "1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pschmitt";

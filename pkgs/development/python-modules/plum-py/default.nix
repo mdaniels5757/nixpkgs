@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "plum-py";
   version = "0.8.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitLab {
     owner = "dangass";

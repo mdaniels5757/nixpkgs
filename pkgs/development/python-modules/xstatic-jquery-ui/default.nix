@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "xstatic-jquery-ui";
   version = "1.13.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "XStatic-jquery-ui";

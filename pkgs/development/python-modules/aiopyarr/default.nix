@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "aiopyarr";
   version = "23.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tkdrob";

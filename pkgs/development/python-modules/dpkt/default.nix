@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "dpkt";
   version = "1.9.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "opytimark";
   version = "1.0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "gugarosa";

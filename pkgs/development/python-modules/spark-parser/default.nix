@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "spark-parser";
   version = "1.9.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "spark_parser";

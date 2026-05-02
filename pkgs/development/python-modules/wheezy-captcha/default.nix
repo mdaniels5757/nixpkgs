@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "wheezy.captcha";
   version = "3.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

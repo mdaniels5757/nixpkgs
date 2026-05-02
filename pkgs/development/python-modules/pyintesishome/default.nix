@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyintesishome";
   version = "1.8.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jnimmo";

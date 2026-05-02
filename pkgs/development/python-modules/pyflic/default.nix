@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyflic";
   version = "2.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "soldag";

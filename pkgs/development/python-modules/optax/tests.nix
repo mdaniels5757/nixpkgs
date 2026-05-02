@@ -10,7 +10,7 @@
 }:
 
 buildPythonPackage {
-  format = "setuptools";
+  pyproject = true;
   pname = "optax-tests";
   inherit (optax) version;
 

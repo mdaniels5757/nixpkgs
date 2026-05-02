@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "warcio";
   version = "1.7.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "webrecorder";

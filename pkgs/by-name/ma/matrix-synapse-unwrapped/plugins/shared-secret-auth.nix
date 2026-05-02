@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "matrix-synapse-shared-secret-auth";
   version = "2.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "devture";

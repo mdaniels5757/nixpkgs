@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sanic-routing";
   version = "23.12.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sanic-org";

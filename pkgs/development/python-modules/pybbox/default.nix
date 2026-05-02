@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pybbox";
   version = "0.0.5-alpha";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "HydrelioxGitHub";

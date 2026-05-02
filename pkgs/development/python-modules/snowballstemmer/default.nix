@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "snowballstemmer";
   version = "3.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

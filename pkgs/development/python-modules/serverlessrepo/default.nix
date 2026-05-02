@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "serverlessrepo";
   version = "0.1.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "hupper";
   version = "1.12.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

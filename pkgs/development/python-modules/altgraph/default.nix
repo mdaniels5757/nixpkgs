@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "altgraph";
   version = "0.17.5";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

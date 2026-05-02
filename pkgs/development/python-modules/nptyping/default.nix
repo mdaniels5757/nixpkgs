@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "nptyping";
   version = "2.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ramonhagenaars";

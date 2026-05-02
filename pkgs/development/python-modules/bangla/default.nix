@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "bangla";
   version = "0.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "mkdocs-mermaid2-plugin";
   version = "1.2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "fralau";

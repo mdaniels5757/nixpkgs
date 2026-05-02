@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "oocsi";
   version = "0.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

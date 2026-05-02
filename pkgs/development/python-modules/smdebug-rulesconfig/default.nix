@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "smdebug-rulesconfig";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

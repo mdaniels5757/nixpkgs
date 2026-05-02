@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "temperusb";
   version = "1.6.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

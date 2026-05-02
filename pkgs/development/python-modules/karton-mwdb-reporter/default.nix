@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "karton-mwdb-reporter";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CERT-Polska";

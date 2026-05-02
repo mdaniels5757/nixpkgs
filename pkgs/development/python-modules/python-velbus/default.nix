@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "python-velbus";
   version = "2.1.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

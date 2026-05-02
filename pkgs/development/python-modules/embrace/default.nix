@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "embrace";
   version = "4.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromSourcehut {
     vc = "hg";

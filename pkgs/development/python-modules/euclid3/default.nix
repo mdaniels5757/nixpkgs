@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "euclid3";
   version = "0.01";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -9,7 +9,7 @@
 buildPythonPackage {
   pname = "pyxl3";
   version = "1.4";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

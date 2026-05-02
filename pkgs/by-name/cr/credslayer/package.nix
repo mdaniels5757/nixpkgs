@@ -8,7 +8,7 @@
 python3.pkgs.buildPythonApplication rec {
   pname = "credslayer";
   version = "0.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ShellCode33";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "sabyenc3";
   version = "5.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

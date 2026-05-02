@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "simpleaudio";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

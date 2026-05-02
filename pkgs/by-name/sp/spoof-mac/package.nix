@@ -7,7 +7,7 @@
 python3Packages.buildPythonPackage {
   pname = "spoof-mac";
   version = "0-unstable-2018-01-27";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "feross";

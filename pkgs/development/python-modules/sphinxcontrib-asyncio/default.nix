@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sphinxcontrib-asyncio";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

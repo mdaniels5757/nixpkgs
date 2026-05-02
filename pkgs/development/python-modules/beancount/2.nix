@@ -19,7 +19,7 @@
 
 buildPythonPackage rec {
   version = "2.3.6";
-  format = "setuptools";
+  pyproject = true;
   pname = "beancount";
 
   disabled = !isPy3k;

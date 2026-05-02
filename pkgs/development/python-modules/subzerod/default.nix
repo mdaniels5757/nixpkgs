@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "subzerod";
   version = "1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

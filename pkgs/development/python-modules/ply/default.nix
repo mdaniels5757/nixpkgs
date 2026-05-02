@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ply";
   version = "3.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

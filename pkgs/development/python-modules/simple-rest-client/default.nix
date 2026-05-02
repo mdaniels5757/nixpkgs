@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "simple-rest-client";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "allisson";

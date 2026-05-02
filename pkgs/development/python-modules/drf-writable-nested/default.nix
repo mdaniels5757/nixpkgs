@@ -11,7 +11,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "drf-writable-nested";
   version = "0.7.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "beda-software";

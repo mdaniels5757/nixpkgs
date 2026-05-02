@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "manuel";
   version = "1.13.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

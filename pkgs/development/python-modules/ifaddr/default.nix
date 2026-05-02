@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "ifaddr";
 
   src = fetchPypi {

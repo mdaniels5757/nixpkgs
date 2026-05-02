@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "terminaltables";
   version = "3.1.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

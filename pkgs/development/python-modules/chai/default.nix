@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "chai";
   version = "1.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

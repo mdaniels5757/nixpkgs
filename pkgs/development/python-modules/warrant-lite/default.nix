@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "warrant-lite";
   version = "1.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

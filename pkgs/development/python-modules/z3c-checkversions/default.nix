@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "z3c-checkversions";
   version = "3.0";
-  format = "setuptools";
+  pyproject = true;
 
   # distutils usage
   disabled = pythonAtLeast "3.12";

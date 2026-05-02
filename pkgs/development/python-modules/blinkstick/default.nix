@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "blinkstick";
   version = "unstable-2023-05-04";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "arvydas";

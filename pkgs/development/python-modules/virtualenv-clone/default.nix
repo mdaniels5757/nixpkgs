@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "virtualenv-clone";
   version = "0.5.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "edwardgeorge";

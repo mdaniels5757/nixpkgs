@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "python-yate";
   version = "0.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "eventphone";

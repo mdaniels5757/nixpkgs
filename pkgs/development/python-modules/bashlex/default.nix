@@ -10,7 +10,7 @@ buildPythonPackage rec {
   pname = "bashlex";
   version = "0.18";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "idank";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pygetwindow";
   version = "0.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyGetWindow";

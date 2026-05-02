@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "apcaccess";
   version = "0.0.13";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "flyte";

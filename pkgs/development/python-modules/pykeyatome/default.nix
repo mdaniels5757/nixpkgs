@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "pykeyatome";
   version = "2.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jugla";

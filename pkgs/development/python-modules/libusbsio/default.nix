@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   pname = "libusbsio";
-  format = "setuptools";
+  pyproject = true;
   version = "2.1.13";
   # If the versions come back into sync switch back to inheriting from c lib
   # inherit (libusbsio) version;

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "crytic-compile";
   version = "0.3.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "crytic";

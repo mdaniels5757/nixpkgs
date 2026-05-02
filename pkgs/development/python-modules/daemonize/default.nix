@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "daemonize";
   version = "2.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

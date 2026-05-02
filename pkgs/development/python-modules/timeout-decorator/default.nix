@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "timeout-decorator";
   version = "0.5.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

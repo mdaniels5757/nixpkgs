@@ -7,7 +7,7 @@
 buildPythonPackage {
   pname = "polygon3";
   version = "3.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jraedler";

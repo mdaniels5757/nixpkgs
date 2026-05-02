@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pymemoize";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

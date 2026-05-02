@@ -10,7 +10,7 @@
 
 buildPythonPackage rec {
   version = "4.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "roku";
   disabled = isPy27;
 

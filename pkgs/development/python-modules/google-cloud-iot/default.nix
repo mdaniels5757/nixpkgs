@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "google-cloud-iot";
   version = "2.9.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

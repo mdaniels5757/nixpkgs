@@ -9,7 +9,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "dmensamenu";
   version = "1.2.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dotlambda";

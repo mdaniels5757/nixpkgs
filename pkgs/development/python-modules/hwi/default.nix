@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "hwi";
   version = "3.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bitcoin-core";

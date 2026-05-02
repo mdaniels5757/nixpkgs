@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "simplehound";
   version = "0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "robmarkcole";

@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "stookalert";
   version = "0.1.4";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

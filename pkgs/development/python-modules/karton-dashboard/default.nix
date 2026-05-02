@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "karton-dashboard";
   version = "1.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CERT-Polska";

@@ -11,7 +11,7 @@ buildPythonPackage rec {
   pname = "siobrultech-protocols";
   version = "0.14.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sdwilsh";

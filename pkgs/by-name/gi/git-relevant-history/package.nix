@@ -10,7 +10,7 @@
 python3.pkgs.buildPythonApplication {
   pname = "git-relevant-history";
   version = "1.0.0-unstable-2022-09-15";
-  format = "setuptools";
+  pyproject = true;
   src = fetchFromGitHub {
     owner = "rainlabs-eu";
     repo = "git-relevant-history";

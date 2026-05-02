@@ -11,7 +11,7 @@
 
 buildPythonPackage rec {
   version = "1.1.28";
-  format = "setuptools";
+  pyproject = true;
   pname = "azure-common";
   disabled = isPyPy;
 

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "fields";
   version = "5.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

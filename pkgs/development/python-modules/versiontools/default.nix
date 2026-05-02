@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "versiontools";
   version = "1.9.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

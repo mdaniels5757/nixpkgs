@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "beautiful-date";
   version = "2.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "kuzmoyev";

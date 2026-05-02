@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sparqlwrapper";
   version = "2.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "SPARQLWrapper";

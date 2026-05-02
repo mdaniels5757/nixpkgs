@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "pyudev";
   version = "0.24.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

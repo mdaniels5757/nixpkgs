@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "radiotherm";
   version = "2.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mhrivnak";

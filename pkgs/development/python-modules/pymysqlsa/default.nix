@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pymysql-sa";
   version = "1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

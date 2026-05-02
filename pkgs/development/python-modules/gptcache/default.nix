@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "gptcache";
   version = "0.1.44";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "zilliztech";

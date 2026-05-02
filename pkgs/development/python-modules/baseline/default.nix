@@ -9,7 +9,7 @@
 buildPythonPackage {
   pname = "baseline";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchFromGitHub {

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sphinx-basic-ng";
   version = "1.0.0.beta2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pradyunsg";

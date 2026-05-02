@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "dbf";
   version = "0.99.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

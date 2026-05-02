@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "dataclass-factory";
   version = "2.16";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "reagento";

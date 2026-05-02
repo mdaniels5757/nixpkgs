@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "progressbar33";
   version = "2.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

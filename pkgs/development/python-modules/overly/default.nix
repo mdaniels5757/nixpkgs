@@ -11,7 +11,7 @@ buildPythonPackage rec {
   pname = "overly";
   version = "0.1.85";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

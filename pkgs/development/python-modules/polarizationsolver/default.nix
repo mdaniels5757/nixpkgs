@@ -11,7 +11,7 @@
 buildPythonPackage {
   pname = "polarizationsolver";
   version = "unstable-2021-11-02";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitLab {
     owner = "reinholdt";

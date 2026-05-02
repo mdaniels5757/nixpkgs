@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "ospd";
   version = "21.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "greenbone";

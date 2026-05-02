@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "azure-cosmosdb-table";
   version = "1.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "update-copyright";
   version = "0.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = !isPy3k;
 

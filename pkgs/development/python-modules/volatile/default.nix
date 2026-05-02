@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "volatile";
   version = "2.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mbr";

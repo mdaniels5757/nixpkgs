@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "aiokef";
   version = "0.2.17";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "basnijholt";

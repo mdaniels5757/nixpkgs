@@ -11,7 +11,7 @@
 buildPythonPackage {
   pname = "oyaml";
   version = "unstable-2021-12-03";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wimglenn";

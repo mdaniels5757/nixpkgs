@@ -8,7 +8,7 @@
 buildPythonPackage {
   pname = "pyspinel";
   version = "unstable-2021-08-19";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "openthread";

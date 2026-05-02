@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "monotonic";
   version = "1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

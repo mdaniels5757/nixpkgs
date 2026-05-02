@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "ripe-atlas-sagan";
   version = "1.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "RIPE-NCC";

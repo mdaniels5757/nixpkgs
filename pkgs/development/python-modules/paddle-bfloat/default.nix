@@ -11,7 +11,7 @@ let
 in
 buildPythonPackage {
   inherit pname version;
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "paddle_bfloat";

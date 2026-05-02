@@ -8,7 +8,7 @@
 python3Packages.buildPythonApplication {
   pname = "git-bars";
   version = "0-unstable-2023-08-08";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "knadh";

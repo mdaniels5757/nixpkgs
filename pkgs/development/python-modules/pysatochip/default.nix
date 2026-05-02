@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pysatochip";
   version = "0.17.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "toporin";

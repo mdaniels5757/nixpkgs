@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "aioprometheus";
   version = "unstable-2023-03-14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "claws";

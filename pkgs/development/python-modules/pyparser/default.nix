@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyparser";
   version = "1.0";
-  format = "setuptools";
+  pyproject = true;
 
   # Missing tests on Pypi
   src = fetchhg {

@@ -10,7 +10,7 @@
 buildPythonPackage {
   pname = "pybluez";
   version = "unstable-2022-01-28";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pybluez";

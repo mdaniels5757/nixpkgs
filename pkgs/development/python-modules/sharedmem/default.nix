@@ -9,7 +9,7 @@ buildPythonPackage rec {
 
   pname = "sharedmem";
   version = "0.3.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

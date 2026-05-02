@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "filebrowser-safe";
   version = "1.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "filebrowser_safe";

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "grpcio-status";
   version = "1.80.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "grpcio_status";

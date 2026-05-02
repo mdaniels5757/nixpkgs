@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "update-dotdee";
   version = "6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "xolox";

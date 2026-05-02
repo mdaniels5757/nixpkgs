@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "plaster-pastedeploy";
   version = "1.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "plaster_pastedeploy";

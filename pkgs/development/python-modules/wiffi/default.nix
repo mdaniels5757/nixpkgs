@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "wiffi";
   version = "1.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mampfes";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "mistletoe";
   version = "1.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "miyuchina";

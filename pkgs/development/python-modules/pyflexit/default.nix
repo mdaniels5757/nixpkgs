@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyflexit";
   version = "0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Sabesto";

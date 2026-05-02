@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pylibmc";
   version = "1.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "testrepository";
   version = "0.0.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

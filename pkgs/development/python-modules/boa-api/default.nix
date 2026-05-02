@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "boa-api";
   version = "0.1.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "boalang";

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "btsocket";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ukBaz";

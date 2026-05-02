@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "async-generator";
   version = "1.10";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "async_generator";

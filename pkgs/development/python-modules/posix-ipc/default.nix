@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "posix-ipc";
   version = "1.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "osvenskan";

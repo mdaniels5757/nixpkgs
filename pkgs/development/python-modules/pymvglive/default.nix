@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pymvglive";
   version = "1.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyMVGLive";

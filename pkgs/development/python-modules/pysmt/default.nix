@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pysmt";
   version = "0.9.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pysmt";

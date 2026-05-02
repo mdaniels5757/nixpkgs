@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "notify-events";
   version = "1.1.3";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "notify_events";

@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "pyspice";
   version = "1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PySpice";

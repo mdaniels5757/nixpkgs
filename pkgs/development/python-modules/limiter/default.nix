@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "limiter";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "alexdelorenzo";

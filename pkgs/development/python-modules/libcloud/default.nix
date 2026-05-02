@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "apache-libcloud";
   version = "3.8.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

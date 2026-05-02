@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "i2csense";
   version = "0.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

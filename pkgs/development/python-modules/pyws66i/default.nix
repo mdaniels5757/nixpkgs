@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pyws66i";
   version = "1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ssaenger";

@@ -8,7 +8,7 @@ buildPythonPackage rec {
   pname = "steamodd";
   version = "5.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Lagg";

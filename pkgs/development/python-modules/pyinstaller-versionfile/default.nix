@@ -11,7 +11,7 @@ buildPythonPackage rec {
   pname = "pyinstaller-versionfile";
   version = "3.0.1";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "DudeNr33";

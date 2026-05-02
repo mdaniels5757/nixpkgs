@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "ssdeep";
   version = "3.4.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "DinoTools";

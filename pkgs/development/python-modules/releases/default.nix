@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "releases";
   version = "2.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bitprophet";

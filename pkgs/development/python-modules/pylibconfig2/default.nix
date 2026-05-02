@@ -7,7 +7,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pylibconfig2";
   version = "0.2.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

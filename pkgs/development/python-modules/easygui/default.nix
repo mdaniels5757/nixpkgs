@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "easygui";
   version = "0.98.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

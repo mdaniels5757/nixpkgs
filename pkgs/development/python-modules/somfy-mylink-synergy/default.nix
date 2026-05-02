@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "somfy-mylink-synergy";
   version = "1.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bendews";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "stopit";
   version = "1.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   # tests are missing from the PyPi tarball
   src = fetchFromGitHub {

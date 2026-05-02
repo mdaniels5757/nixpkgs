@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pysoma";
   version = "0.0.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

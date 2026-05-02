@@ -8,7 +8,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "django-classy-tags";
   version = "4.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

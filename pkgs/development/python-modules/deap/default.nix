@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "deap";
   version = "1.4.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

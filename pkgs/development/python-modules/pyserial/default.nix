@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyserial";
   version = "3.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

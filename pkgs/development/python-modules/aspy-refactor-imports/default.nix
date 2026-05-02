@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "aspy-refactor-imports";
   version = "4.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "asottile";

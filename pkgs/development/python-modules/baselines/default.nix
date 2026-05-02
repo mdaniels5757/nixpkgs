@@ -19,7 +19,7 @@
 buildPythonPackage {
   pname = "baselines";
   version = "0.1.6"; # remember to manually adjust the rev
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "openai";

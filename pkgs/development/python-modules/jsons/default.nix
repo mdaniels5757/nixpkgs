@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "jsons";
   version = "1.6.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ramonhagenaars";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "djangorestframework-recursive";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "heywbj";

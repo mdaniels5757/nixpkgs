@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "python-google-nest";
   version = "5.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

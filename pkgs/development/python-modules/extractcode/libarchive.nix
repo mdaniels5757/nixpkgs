@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "extractcode-libarchive";
   version = "21.5.31";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "aboutcode-org";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "jsonlines";
   version = "4.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wbolster";

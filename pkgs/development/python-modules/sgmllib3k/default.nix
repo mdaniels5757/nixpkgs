@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sgmllib3k";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = isPy27;
 

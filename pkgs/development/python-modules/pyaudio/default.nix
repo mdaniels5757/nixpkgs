@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pyaudio";
   version = "0.2.14";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPyPy;
 
   src = fetchPypi {

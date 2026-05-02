@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "base36";
   version = "0.1.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tonyseek";

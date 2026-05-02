@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "namedlist";
   version = "1.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

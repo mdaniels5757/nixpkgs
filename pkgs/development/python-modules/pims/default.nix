@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pims";
   version = "0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "soft-matter";

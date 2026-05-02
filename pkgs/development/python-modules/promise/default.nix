@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "promise";
   version = "2.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "syrusakbary";

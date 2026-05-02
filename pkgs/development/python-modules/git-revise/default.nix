@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "git-revise";
   version = "0.7.0-unstable-2025-01-28";
-  format = "setuptools";
+  pyproject = true;
 
   # Missing tests on PyPI
   src = fetchFromGitHub {

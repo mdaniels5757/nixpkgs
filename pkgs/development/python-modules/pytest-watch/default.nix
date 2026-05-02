@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pytest-watch";
   version = "4.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

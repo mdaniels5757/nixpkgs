@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "whichcraft";
   version = "0.6.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

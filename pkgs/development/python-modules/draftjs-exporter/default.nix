@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "draftjs-exporter";
   version = "5.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "draftjs_exporter";

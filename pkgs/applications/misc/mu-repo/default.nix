@@ -11,7 +11,7 @@
 buildPythonApplication rec {
   pname = "mu-repo";
   version = "1.9.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "fabioz";

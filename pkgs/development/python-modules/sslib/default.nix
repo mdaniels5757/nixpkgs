@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sslib";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchPypi {

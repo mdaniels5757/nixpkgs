@@ -17,7 +17,7 @@
 buildPythonPackage {
   pname = "misoc";
   version = "0.12-unstable-2025-10-03";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "m-labs";

@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "pyramid-jinja2";
   version = "2.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pyramid_jinja2";

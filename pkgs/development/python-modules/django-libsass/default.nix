@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "django-libsass";
   version = "0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "torchbox";

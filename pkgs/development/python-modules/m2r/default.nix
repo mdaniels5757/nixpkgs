@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "m2r";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

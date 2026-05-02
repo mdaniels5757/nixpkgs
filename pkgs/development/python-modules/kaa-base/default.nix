@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.99.2dev-384-2b73caca";
-  format = "setuptools";
+  pyproject = true;
   pname = "kaa-base";
 
   src = fetchPypi {

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "python-string-utils";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

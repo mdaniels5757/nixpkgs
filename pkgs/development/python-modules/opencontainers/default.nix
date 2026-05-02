@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "opencontainers";
   version = "0.0.15";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "auditok";
   version = "0.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

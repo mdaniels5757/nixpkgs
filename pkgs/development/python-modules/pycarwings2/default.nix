@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pycarwings2";
   version = "2.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "filcole";

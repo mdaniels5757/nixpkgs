@@ -9,7 +9,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "topydo";
   version = "0.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "topydo";

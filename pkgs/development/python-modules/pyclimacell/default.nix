@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyclimacell";
   version = "0.18.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "raman325";

@@ -9,7 +9,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "sacad";
   version = "2.8.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

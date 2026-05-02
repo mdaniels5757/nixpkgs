@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "crysp";
   version = "1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bdcht";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "ftputil";
   version = "5.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

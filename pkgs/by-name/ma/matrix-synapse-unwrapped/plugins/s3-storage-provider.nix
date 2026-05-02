@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "matrix-synapse-s3-storage-provider";
   version = "1.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "matrix-org";

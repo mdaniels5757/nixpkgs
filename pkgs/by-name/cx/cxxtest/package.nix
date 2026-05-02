@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication rec {
   pname = "cxxtest";
   version = "4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CxxTest";

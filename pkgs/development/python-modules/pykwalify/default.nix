@@ -12,7 +12,7 @@
 
 buildPythonPackage rec {
   version = "1.8.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "pykwalify";
 
   src = fetchPypi {

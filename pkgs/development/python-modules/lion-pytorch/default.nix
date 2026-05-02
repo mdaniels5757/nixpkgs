@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "lion-pytorch";
   version = "0.2.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "lucidrains";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "xmind";
   version = "1.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "zhuifengshen";

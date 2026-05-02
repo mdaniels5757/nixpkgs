@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "espeak-phonemizer";
   version = "1.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "rhasspy";

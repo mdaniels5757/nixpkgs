@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "deezer-py";
   version = "1.3.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

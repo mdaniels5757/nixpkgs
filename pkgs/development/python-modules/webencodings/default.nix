@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "webencodings";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pylibacl";
   version = "0.7.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

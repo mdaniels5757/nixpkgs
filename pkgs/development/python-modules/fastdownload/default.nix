@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "fastdownload";
   version = "0.0.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

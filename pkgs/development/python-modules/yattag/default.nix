@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "yattag";
   version = "1.16.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

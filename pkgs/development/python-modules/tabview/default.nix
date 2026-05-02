@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "tabview";
   version = "1.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   # newest release only available as wheel on pypi
   src = fetchFromGitHub {

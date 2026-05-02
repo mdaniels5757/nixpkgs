@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "telepath";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     repo = "telepath";

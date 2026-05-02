@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "flask-reverse-proxy-fix";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   # master fixes flask import syntax and has no major changes
   # new release requested: https://github.com/sublee/flask-silk/pull/6

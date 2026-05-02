@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pygnmi";
   version = "0.8.15";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "akarneliuk";

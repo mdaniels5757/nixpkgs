@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pyflume";
   version = "0.8.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ChrisMandich";

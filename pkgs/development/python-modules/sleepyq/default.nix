@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "sleepyq";
   version = "0.8.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

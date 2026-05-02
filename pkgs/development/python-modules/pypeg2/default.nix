@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "2.15.2";
-  format = "setuptools";
+  pyproject = true;
   pname = "pypeg2";
 
   src = fetchPypi {

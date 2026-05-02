@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "configobj";
   version = "5.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "DiffSK";

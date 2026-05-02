@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "policyuniverse";
   version = "1.5.1.20231109";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

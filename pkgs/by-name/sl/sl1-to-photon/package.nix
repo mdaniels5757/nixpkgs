@@ -25,7 +25,7 @@ python312Packages.buildPythonApplication rec {
     shiboken2
   ];
 
-  format = "setuptools";
+  pyproject = true;
 
   installPhase = ''
     install -D -m 0755 SL1_to_Photon.py $out/bin/${pname}

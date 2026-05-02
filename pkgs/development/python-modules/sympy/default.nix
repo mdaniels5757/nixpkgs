@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "sympy";
   version = "1.14.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

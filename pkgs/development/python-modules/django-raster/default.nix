@@ -16,7 +16,7 @@
 
 buildPythonPackage rec {
   version = "0.8.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "django-raster";
 
   disabled = !isPy3k;

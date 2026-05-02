@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pysimplesoap";
   version = "1.16.2";
-  format = "setuptools";
+  pyproject = true;
 
   passthru.updateScript = nix-update-script { };
 

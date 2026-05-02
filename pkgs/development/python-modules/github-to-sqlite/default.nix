@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "github-to-sqlite";
   version = "2.9";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchFromGitHub {

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "flask-expects-json";
   version = "1.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Fischerfredl";

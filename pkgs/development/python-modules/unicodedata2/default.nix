@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "unicodedata2";
   version = "17.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version pname;

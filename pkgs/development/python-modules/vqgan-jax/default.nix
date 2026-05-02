@@ -19,7 +19,7 @@ buildPythonPackage {
     hash = "sha256-OZihAXpE0UsgauQ38XDmAF+lrIgz05uK0ro8SCdVsPc=";
   };
 
-  format = "setuptools";
+  pyproject = true;
 
   buildInputs = [ jaxlib ];
 

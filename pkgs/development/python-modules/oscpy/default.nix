@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "oscpy";
   version = "0.6.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "kivy";

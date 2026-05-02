@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pythondialog";
   version = "3.5.3";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchPypi {

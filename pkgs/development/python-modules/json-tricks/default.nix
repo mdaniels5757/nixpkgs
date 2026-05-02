@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "json-tricks";
   version = "3.17.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mverleg";

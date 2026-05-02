@@ -16,7 +16,7 @@
 buildPythonPackage rec {
   pname = "oss2";
   version = "2.18.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "aliyun";

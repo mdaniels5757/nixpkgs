@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "ledger-agent";
   version = "0.9.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "ledger_agent";

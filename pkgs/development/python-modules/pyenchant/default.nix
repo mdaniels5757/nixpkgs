@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyenchant";
   version = "3.3.0";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

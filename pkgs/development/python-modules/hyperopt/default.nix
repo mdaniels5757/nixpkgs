@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "hyperopt";
   version = "0.2.7";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

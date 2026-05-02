@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pybigwig";
   version = "0.3.25";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "deeptools";

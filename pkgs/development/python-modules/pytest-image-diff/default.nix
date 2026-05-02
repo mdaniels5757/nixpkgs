@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "pytest-image-diff";
   version = "0.0.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Apkawa";

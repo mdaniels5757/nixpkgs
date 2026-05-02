@@ -12,7 +12,7 @@
 python3Packages.buildPythonPackage (finalAttrs: {
   pname = "s-tui";
   version = "1.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "amanusk";

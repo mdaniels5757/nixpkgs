@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "azure-keyvault-nspkg";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

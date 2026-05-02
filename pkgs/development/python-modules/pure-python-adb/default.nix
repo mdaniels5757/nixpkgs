@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pure-python-adb";
   version = "0.3.0.dev0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

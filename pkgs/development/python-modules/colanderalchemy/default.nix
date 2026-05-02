@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "colanderalchemy";
   version = "0.3.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "drf-nested-routers";
   version = "0.95.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "alanjds";

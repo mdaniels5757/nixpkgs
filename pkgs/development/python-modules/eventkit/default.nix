@@ -10,7 +10,7 @@ let
   hash = "sha256-mUl/bzxjilD/dhby+M2Iexi7/zdl3BvYaBVU2xRnyTM=";
 in
 buildPythonPackage {
-  format = "setuptools";
+  pyproject = true;
   inherit pname version;
 
   src = fetchPypi { inherit pname version hash; };

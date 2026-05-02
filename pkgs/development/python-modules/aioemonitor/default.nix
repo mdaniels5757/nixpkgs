@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "aioemonitor";
   version = "1.0.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "bdraco";

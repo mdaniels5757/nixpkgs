@@ -6,7 +6,7 @@
 
 buildPythonPackage (finalAttrs: {
   version = "0.5.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "poyo";
 
   src = fetchPypi {

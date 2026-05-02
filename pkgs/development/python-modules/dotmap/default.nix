@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "dotmap";
   version = "1.3.30";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

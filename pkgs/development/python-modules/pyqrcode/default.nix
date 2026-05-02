@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pyqrcode";
   version = "1.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyQRCode";

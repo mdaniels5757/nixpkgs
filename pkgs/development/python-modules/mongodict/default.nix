@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "mongodict";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

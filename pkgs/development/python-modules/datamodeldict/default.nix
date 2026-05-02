@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "datamodeldict";
   version = "0.9.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "DataModelDict";

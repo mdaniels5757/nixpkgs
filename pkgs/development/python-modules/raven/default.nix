@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "raven";
   version = "6.10.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "getsentry";

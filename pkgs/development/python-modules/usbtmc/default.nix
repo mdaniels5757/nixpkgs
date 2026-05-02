@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "usbtmc";
   version = "0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "python-ivi";

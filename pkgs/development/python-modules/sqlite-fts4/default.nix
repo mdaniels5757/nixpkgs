@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sqlite-fts4";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "simonw";

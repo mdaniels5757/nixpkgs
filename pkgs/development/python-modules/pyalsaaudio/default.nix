@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyalsaaudio";
   version = "0.11.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sarge";
   version = "0.1.7.post1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "vsajip";

@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "0.1";
-  format = "setuptools";
+  pyproject = true;
   pname = "dj-search-url";
 
   src = fetchPypi {

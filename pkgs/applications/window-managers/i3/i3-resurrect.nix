@@ -14,7 +14,7 @@
 buildPythonApplication rec {
   pname = "i3-resurrect";
   version = "1.4.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

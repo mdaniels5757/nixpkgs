@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pymata-express";
   version = "1.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "MrYsLab";

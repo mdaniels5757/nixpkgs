@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "daff";
   version = "1.4.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

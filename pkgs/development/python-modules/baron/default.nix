@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "baron";
   version = "0.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "fordpass";
   version = "0.0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "clarkd";

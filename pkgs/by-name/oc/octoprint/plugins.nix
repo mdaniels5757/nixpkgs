@@ -28,7 +28,7 @@ in
   m86motorsoff = buildPlugin rec {
     pname = "m84motorsoff";
     version = "0.1.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "ntoff";
@@ -48,7 +48,7 @@ in
   abl-expert = buildPlugin rec {
     pname = "abl-expert";
     version = "0.6";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitLab {
       domain = "framagit.org";
@@ -69,7 +69,7 @@ in
   bedlevelvisualizer = buildPlugin rec {
     pname = "bedlevelvisualizer";
     version = "1.1.1";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "jneilliii";
@@ -89,7 +89,7 @@ in
   costestimation = buildPlugin rec {
     pname = "costestimation";
     version = "3.4.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OllisGit";
@@ -109,7 +109,7 @@ in
   curaenginelegacy = buildPlugin rec {
     pname = "curaenginelegacy";
     version = "1.1.2";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OctoPrint";
@@ -129,7 +129,7 @@ in
   displayprogress = buildPlugin rec {
     pname = "displayprogress";
     version = "0.1.3";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OctoPrint";
@@ -149,7 +149,7 @@ in
   displaylayerprogress = buildPlugin rec {
     pname = "displaylayerprogress";
     version = "1.26.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OllisGit";
@@ -169,7 +169,7 @@ in
   ender3v2tempfix = buildPlugin {
     pname = "ender3v2tempfix";
     version = "unstable-2021-04-27";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "SimplyPrint";
@@ -189,7 +189,7 @@ in
   firmwareupdater = buildPlugin rec {
     pname = "firmwareupdater";
     version = "1.14.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OctoPrint";
@@ -211,7 +211,7 @@ in
   fullscreen = buildPlugin rec {
     pname = "fullscreen";
     version = "0.0.6";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "BillyBlaze";
@@ -231,7 +231,7 @@ in
   gcodeeditor = buildPlugin rec {
     pname = "gcodeeditor";
     version = "0.2.12";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "ieatacid";
@@ -251,7 +251,7 @@ in
   marlingcodedocumentation = buildPlugin rec {
     pname = "marlingcodedocumentation";
     version = "0.13.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "costas-basdekis";
@@ -271,7 +271,7 @@ in
   mqtt = buildPlugin rec {
     pname = "mqtt";
     version = "0.8.16";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "OctoPrint";
@@ -293,7 +293,7 @@ in
   mqttchambertemperature = buildPlugin rec {
     pname = "mqttchambertemperature";
     version = "0.0.3";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "synman";
@@ -315,7 +315,7 @@ in
   navbartemp = buildPlugin rec {
     pname = "navbartemp";
     version = "0.15";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "imrahil";
@@ -335,7 +335,7 @@ in
   obico = buildPlugin rec {
     pname = "obico";
     version = "2.5.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "TheSpaghettiDetective";
@@ -362,7 +362,7 @@ in
   octopod = buildPlugin rec {
     pname = "octopod";
     version = "0.3.18";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "gdombiak";
@@ -384,7 +384,7 @@ in
   printtimegenius = buildPlugin rec {
     pname = "printtimegenius";
     version = "2.4.0";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "eyal0";
@@ -415,7 +415,7 @@ in
   prusaslicerthumbnails = buildPlugin rec {
     pname = "prusaslicerthumbnails";
     version = "1.0.8";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "jneilliii";
@@ -437,7 +437,7 @@ in
   psucontrol = buildPlugin rec {
     pname = "psucontrol";
     version = "1.0.6";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "kantlivelong";
@@ -466,7 +466,7 @@ in
   resource-monitor = buildPlugin rec {
     pname = "resource-monitor";
     version = "0.3.16";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "Renaud11232";
@@ -488,7 +488,7 @@ in
   simpleemergencystop = buildPlugin rec {
     pname = "simpleemergencystop";
     version = "1.0.5";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "Sebclem";
@@ -508,7 +508,7 @@ in
   stlviewer = buildPlugin rec {
     pname = "stlviewer";
     version = "0.4.2";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "jneilliii";
@@ -528,7 +528,7 @@ in
   telegram = buildPlugin rec {
     pname = "telegram";
     version = "1.6.5";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "fabianonline";
@@ -550,7 +550,7 @@ in
   themeify = buildPlugin rec {
     pname = "themeify";
     version = "1.2.2";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "Birkbjo";
@@ -570,7 +570,7 @@ in
   timelapsepurger = buildPlugin rec {
     pname = "firmwareupdater";
     version = "0.1.4";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "jneilliii";
@@ -590,7 +590,7 @@ in
   titlestatus = buildPlugin rec {
     pname = "titlestatus";
     version = "0.0.5";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "MoonshineSG";
@@ -610,7 +610,7 @@ in
   touchui = buildPlugin rec {
     pname = "touchui";
     version = "0.3.18";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "BillyBlaze";
@@ -630,7 +630,7 @@ in
   octoklipper = buildPlugin rec {
     pname = "octoklipper";
     version = "0.3.8.3";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "AliceGrey";
@@ -650,7 +650,7 @@ in
   dashboard = buildPlugin rec {
     pname = "dashboard";
     version = "1.18.3";
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "StefanCohen";

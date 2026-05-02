@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = "0.11.10";
-  format = "setuptools";
+  pyproject = true;
   pname = "applicationinsights";
 
   src = fetchPypi {

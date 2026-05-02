@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "vcversioner";
   version = "2.16.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

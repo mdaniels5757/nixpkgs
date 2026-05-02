@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "azure-mgmt-devtestlabs";
   version = "9.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

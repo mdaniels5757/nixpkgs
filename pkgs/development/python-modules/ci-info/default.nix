@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "ci-info";
 
   disabled = isPy27;

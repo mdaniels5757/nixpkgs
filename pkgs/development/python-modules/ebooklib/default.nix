@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "ebooklib";
   version = "0.20";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "aerkalov";

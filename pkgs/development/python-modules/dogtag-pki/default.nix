@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "dogtag-pki";
   version = "11.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

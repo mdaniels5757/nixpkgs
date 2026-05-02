@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "bitvavo-aio";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "cyberjunky";

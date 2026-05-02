@@ -18,7 +18,7 @@
 buildPythonPackage rec {
   pname = "siuba";
   version = "0.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "machow";

@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "tasklib";
   version = "2.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

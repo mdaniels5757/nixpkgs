@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "pure-python-adb-homeassistant";
   version = "0.1.7.dev0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

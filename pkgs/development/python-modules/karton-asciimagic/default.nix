@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "karton-asciimagic";
   version = "1.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "CERT-Polska";

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "cbor";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

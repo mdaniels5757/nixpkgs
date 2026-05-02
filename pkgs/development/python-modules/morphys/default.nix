@@ -6,7 +6,7 @@
 buildPythonPackage {
   pname = "morphys";
   version = "1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mkalinski";

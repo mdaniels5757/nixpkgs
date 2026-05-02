@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "l18n";
   version = "2021.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

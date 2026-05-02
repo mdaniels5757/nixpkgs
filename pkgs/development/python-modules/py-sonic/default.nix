@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "py-sonic";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

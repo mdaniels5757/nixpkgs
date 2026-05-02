@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "3.0.2";
-  format = "setuptools";
+  pyproject = true;
   pname = "azure-nspkg";
 
   src = fetchPypi {

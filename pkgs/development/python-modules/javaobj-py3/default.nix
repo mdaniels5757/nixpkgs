@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "javaobj-py3";
   version = "0.4.4";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

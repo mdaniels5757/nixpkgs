@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pytest-raises";
   version = "0.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Lemmons";

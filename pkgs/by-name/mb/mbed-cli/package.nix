@@ -11,7 +11,7 @@ with python3Packages;
 buildPythonApplication (finalAttrs: {
   pname = "mbed-cli";
   version = "1.10.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

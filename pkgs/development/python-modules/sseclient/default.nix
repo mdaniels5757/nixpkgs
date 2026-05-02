@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "sseclient";
   version = "0.0.27";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

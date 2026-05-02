@@ -15,7 +15,7 @@
 buildPythonPackage rec {
   pname = "onlykey-solo-python";
   version = "0.0.32";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

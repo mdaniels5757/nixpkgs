@@ -6,7 +6,7 @@
 buildPythonPackage rec {
   pname = "pymeta3";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

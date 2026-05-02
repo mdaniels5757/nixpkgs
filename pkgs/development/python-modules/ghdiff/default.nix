@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "ghdiff";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

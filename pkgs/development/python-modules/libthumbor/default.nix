@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "libthumbor";
   version = "2.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

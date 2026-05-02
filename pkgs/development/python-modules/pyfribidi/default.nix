@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.12.0";
-  format = "setuptools";
+  pyproject = true;
   pname = "pyfribidi";
   disabled = isPyPy;
 

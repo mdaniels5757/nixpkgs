@@ -8,7 +8,7 @@
 python3.pkgs.buildPythonApplication rec {
   pname = "changedetection-io";
   version = "0.53.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dgtlmoon";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "bitcoin-utils-fork-minimal";
   version = "0.4.11.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

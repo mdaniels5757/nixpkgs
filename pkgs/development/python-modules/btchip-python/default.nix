@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "btchip-python";
   version = "0.1.32";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

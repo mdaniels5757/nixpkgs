@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "parsimonious";
   version = "0.11.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

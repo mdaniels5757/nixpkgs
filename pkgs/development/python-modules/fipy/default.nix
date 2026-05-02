@@ -20,7 +20,7 @@
 buildPythonPackage rec {
   pname = "fipy";
   version = "4.0";
-  format = "setuptools";
+  pyproject = true;
 
   # Python 3.12 is not yet supported.
   # https://github.com/usnistgov/fipy/issues/997

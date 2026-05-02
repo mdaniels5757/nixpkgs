@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pytest-click";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Stranger6667";

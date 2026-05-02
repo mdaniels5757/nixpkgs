@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "greg";
   version = "0.4.8";
-  format = "setuptools";
+  pyproject = true;
 
   disabled = !python3Packages.isPy3k;
 

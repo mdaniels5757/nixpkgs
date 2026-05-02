@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "tunigo";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   propagatedBuildInputs = [ requests ];
 

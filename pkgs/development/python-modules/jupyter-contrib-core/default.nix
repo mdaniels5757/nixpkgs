@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "jupyter-contrib-core";
   version = "0.4.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jupyter-contrib";

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "bwapy";
   version = "0.1.4";
-  format = "setuptools";
+  pyproject = true;
 
   # uses the removed imp module
   disabled = pythonAtLeast "3.12";

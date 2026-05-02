@@ -11,7 +11,7 @@
 buildPythonPackage {
   pname = "pescea";
   version = "1.0.12";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "lazdavila";

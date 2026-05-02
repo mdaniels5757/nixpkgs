@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ueagle";
   version = "0.0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jcalbert";

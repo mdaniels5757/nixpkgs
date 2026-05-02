@@ -7,7 +7,7 @@
 
 buildPythonPackage rec {
   version = libsixel.version;
-  format = "setuptools";
+  pyproject = true;
   pname = "libsixel";
 
   src = libsixel.src;

@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "sphfile";
   version = "1.0.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchurl {
     url = "mirror://pypi/s/sphfile/${pname}-${version}.tar.gz";

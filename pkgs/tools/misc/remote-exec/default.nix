@@ -16,7 +16,7 @@
 buildPythonApplication rec {
   pname = "remote-exec";
   version = "1.13.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "remote-cli";

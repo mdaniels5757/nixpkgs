@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "dehinter";
   version = "4.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   # PyPI source tarballs omit tests, fetch from Github instead
   src = fetchFromGitHub {

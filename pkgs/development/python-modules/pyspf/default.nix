@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyspf";
   version = "2.0.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "sdgathman";

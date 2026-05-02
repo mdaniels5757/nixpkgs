@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "mock";
   version = "5.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

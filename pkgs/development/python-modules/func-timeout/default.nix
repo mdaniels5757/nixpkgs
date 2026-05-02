@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "func-timeout";
   version = "4.3.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "func_timeout";

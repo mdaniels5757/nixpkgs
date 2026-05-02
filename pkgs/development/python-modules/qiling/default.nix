@@ -19,7 +19,7 @@
 buildPythonPackage rec {
   pname = "qiling";
   version = "1.4.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -8,7 +8,7 @@
 python3Packages.buildPythonApplication (finalAttrs: {
   pname = "acd-cli";
   version = "0.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   doCheck = false;
 

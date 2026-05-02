@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "j2cli";
   version = "0.3.10";
-  format = "setuptools";
+  pyproject = true;
   disabled = pythonAtLeast "3.12";
 
   src = fetchPypi {

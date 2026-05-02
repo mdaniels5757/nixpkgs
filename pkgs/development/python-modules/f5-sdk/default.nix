@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "f5-sdk";
   version = "3.0.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

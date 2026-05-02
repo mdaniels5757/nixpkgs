@@ -13,7 +13,7 @@ buildPythonPackage rec {
   pname = "relatorio";
   version = "0.11.1";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

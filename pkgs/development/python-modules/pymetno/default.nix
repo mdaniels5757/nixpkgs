@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pymetno";
   version = "0.13.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Danielhiversen";

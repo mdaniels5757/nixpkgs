@@ -25,7 +25,7 @@
 buildPythonPackage rec {
   pname = "gradient";
   version = "3.10.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

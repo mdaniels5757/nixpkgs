@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "justbytes";
   version = "0.15.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "mulkieran";

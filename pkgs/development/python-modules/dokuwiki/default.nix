@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "dokuwiki";
   version = "1.3.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

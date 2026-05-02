@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "tuyaha";
   version = "0.0.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "PaulAnnekov";

@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pytest-dotenv";
   version = "0.5.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

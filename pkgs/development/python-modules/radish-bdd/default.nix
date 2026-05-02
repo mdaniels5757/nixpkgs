@@ -17,7 +17,7 @@
 buildPythonPackage rec {
   pname = "radish-bdd";
   version = "0.18.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = pname;

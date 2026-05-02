@@ -13,7 +13,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "halo";
   version = "0.0.31";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

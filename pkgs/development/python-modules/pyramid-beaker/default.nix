@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyramid-beaker";
   version = "0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "pyramid_beaker";

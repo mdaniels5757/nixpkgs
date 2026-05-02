@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "typecode-libmagic";
   version = "21.5.31";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "aboutcode-org";

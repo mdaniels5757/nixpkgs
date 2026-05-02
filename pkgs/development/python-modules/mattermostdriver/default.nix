@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "mattermostdriver";
   version = "7.3.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

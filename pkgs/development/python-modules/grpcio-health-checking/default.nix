@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "grpcio-health-checking";
   version = "1.80.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "grpcio_health_checking";

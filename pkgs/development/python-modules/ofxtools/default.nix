@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "ofxtools";
   version = "0.9.5";
-  format = "setuptools";
+  pyproject = true;
 
   # PyPI distribution does not include tests
   src = fetchFromGitHub {

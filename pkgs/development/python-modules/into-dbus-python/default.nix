@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "into-dbus-python";
   version = "0.8.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "stratis-storage";

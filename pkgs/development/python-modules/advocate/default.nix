@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "advocate";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "JordanMilne";

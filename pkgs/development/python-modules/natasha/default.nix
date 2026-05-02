@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "natasha";
   version = "1.6.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

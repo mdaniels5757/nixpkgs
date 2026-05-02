@@ -8,7 +8,7 @@ with python3Packages;
 buildPythonApplication rec {
   pname = "pylint-exit";
   version = "1.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jongracecox";

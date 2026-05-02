@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "serialio";
   version = "2.4.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "tiagocoutinho";

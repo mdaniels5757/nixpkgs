@@ -21,7 +21,7 @@
 buildPythonPackage rec {
   pname = "scikit-tda";
   version = "1.1.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchFromGitHub {

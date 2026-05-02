@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "pyxiaomigateway";
   version = "0.14.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Danielhiversen";

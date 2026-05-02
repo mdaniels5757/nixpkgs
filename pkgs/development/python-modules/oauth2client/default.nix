@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "oauth2client";
   version = "4.1.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

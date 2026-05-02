@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.3";
-  format = "setuptools";
+  pyproject = true;
   pname = "pygpgme";
 
   # Native code doesn't compile against the C API of Python 3.11:

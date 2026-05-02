@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "georss-generic-client";
   version = "0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "exxamalte";

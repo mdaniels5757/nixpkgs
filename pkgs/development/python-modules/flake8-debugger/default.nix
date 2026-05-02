@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "flake8-debugger";
   version = "4.1.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

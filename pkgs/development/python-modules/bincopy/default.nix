@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "bincopy";
   version = "20.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit (finalAttrs) pname version;

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "sysv-ipc";
   version = "1.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "sysv_ipc";

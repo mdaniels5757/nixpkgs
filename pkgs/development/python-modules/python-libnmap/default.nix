@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "python-libnmap";
   version = "0.7.3";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "savon-noir";

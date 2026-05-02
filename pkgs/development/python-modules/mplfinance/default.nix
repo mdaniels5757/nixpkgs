@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "mplfinance";
   version = "0.12.10b0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "pulsectl";
   version = "24.12.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

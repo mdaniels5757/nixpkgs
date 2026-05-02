@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "dj-static";
   version = "0.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "heroku-python";

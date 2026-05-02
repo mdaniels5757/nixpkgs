@@ -13,7 +13,7 @@
 buildPythonPackage {
   pname = "lunarcalendar";
   version = "0.0.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "wolfhong";

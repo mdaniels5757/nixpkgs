@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "debuglater";
   version = "1.4.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ploomber";

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "nodepy-runtime";
   version = "2.1.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

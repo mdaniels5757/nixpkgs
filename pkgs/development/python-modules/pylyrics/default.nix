@@ -9,7 +9,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pylyrics";
   version = "1.1.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyLyrics";

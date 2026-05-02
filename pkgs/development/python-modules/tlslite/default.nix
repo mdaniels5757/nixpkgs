@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "tlslite";
   version = "0.4.9";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

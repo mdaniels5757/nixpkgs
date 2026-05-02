@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "zimports";
   version = "0.7.0";
-  format = "setuptools";
+  pyproject = true;
 
   # upstream technically support 3.7 through 3.9, but 3.10 happens to work while 3.11 breaks with an import error
   disabled = pythonAtLeast "3.11";

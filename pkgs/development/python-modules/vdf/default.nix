@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "vdf";
   version = "3.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ValvePython";

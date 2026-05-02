@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "energyflip-client";
   version = "0.2.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dennisschroer";

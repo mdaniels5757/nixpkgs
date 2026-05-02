@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "flake8-blind-except";
   version = "0.2.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

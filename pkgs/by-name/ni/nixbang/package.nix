@@ -7,7 +7,7 @@
 python3Packages.buildPythonApplication rec {
   pname = "nixbang";
   version = "0.1.2";
-  format = "setuptools";
+  pyproject = true;
   namePrefix = "";
 
   src = fetchFromGitHub {

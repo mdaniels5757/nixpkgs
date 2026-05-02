@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "npyscreen";
   version = "4.10.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

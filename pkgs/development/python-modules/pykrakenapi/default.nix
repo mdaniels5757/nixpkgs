@@ -10,7 +10,7 @@ buildPythonPackage rec {
   pname = "pykrakenapi";
   version = "0.3.2";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "dominiktraxl";

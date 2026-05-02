@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "lineedit";
   version = "0.1.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "randy3k";

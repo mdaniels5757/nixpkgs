@@ -9,7 +9,7 @@ buildPythonPackage rec {
   pname = "pytube";
   version = "15.0.0";
 
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "pytube";

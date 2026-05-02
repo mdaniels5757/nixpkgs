@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pysol-cards";
   version = "0.24.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit version;

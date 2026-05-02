@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "python-louvain";
   version = "0.16";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

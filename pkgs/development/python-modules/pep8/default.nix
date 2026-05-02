@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pep8";
   version = "1.7.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

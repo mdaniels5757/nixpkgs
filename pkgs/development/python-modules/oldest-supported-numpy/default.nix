@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "oldest-supported-numpy";
   version = "2023.12.21";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

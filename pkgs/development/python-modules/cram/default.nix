@@ -9,7 +9,7 @@
 
 buildPythonPackage rec {
   version = "0.7";
-  format = "setuptools";
+  pyproject = true;
   pname = "cram";
 
   nativeCheckInputs = [ which ];

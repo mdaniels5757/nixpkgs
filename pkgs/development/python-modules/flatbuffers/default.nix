@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   inherit (flatbuffers) pname version src;
 
-  format = "setuptools";
+  pyproject = true;
 
   sourceRoot = "${src.name}/python";
 

@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "pdfrw";
   version = "0.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

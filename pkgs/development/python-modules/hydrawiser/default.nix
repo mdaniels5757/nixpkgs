@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "hydrawiser";
   version = "0.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ptcryan";

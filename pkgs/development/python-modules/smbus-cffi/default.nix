@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "smbus-cffi";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

@@ -19,7 +19,7 @@
 buildPythonApplication rec {
   pname = "yakut";
   version = "0.14.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

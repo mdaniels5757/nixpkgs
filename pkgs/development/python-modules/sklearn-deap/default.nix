@@ -13,7 +13,7 @@
 buildPythonPackage rec {
   pname = "sklearn-deap";
   version = "0.3.0";
-  format = "setuptools";
+  pyproject = true;
 
   # No tests in Pypi
   src = fetchFromGitHub {

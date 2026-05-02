@@ -14,7 +14,7 @@
 buildPythonPackage rec {
   pname = "py-air-control-exporter";
   version = "0.3.1";
-  format = "setuptools";
+  pyproject = true;
   disabled = isPy27;
 
   src = fetchPypi {

@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "rply";
   version = "0.7.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "alex";

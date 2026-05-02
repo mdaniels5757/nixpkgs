@@ -21,7 +21,7 @@ let
     pname = "pylama";
     version = "8.4.1";
 
-    format = "setuptools";
+    pyproject = true;
 
     src = fetchFromGitHub {
       owner = "klen";

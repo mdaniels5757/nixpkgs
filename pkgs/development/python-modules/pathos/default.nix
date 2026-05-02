@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pathos";
   version = "0.3.5";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "uqfoundation";

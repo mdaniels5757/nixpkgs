@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "dbus-client-gen";
   version = "0.5.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

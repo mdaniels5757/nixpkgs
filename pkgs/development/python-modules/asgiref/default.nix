@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   version = "3.11.0";
   pname = "asgiref";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "django";

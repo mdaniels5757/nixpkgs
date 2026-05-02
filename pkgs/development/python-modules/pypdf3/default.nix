@@ -10,7 +10,7 @@
 buildPythonPackage (finalAttrs: {
   pname = "pypdf3";
   version = "1.0.6";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "PyPDF3";

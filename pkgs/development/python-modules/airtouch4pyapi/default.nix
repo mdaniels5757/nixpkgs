@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "airtouch4pyapi";
   version = "1.0.8";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "LonePurpleWolf";

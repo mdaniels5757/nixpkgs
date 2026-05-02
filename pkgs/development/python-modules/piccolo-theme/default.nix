@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "piccolo-theme";
   version = "0.24.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     pname = "piccolo_theme";

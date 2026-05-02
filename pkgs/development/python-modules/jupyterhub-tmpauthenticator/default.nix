@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "jupyterhub-tmpauthenticator";
   version = "1.0.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

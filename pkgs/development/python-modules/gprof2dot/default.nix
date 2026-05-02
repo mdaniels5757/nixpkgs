@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "gprof2dot";
   version = "2025.04.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jrfonseca";

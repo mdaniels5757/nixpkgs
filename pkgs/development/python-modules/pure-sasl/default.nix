@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pure-sasl";
   version = "0.6.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "thobbs";

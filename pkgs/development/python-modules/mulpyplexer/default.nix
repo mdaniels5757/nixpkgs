@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "mulpyplexer";
   version = "0.09";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

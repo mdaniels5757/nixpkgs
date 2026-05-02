@@ -33,7 +33,7 @@ in
 buildPythonPackage {
   pname = "unstructured-api-tools";
   inherit version;
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "Unstructured-IO";

@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "pylint-celery";
   version = "0.3";
-  format = "setuptools";
+  pyproject = true;
   disabled = !isPy3k;
 
   src = fetchFromGitHub {

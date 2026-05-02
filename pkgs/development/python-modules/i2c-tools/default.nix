@@ -7,7 +7,7 @@
 buildPythonPackage {
   inherit (i2c-tools) pname version src;
 
-  format = "setuptools";
+  pyproject = true;
 
   buildInputs = [ i2c-tools ];
 

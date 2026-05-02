@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "flatdict";
   version = "4.0.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "gmr";

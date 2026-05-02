@@ -36,7 +36,7 @@ in
 buildPythonPackage rec {
   pname = "blivet";
   version = "3.13.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "storaged-project";

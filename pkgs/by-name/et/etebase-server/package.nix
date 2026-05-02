@@ -11,7 +11,7 @@
 python3.pkgs.buildPythonApplication (finalAttrs: {
   pname = "etebase-server";
   version = "0.14.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "etesync";

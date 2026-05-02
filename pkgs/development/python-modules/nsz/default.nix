@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "nsz";
   version = "4.6.1";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "nicoboss";

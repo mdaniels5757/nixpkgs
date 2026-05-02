@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "multiprocess";
   version = "0.70.19";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "uqfoundation";

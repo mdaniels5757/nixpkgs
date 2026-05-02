@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pycocotools";
   version = "2.0.11";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

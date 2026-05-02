@@ -7,7 +7,7 @@
 buildPythonPackage rec {
   pname = "types-docopt";
   version = "0.6.11.20241107";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

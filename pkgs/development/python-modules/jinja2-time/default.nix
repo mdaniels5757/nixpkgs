@@ -12,7 +12,7 @@
 buildPythonPackage rec {
   pname = "jinja2-time";
   version = "0.2.0";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;

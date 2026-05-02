@@ -10,7 +10,7 @@
 buildPythonPackage rec {
   pname = "pyobihai";
   version = "1.4.2";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "ejpenney";

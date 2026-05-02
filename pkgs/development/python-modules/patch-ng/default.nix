@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   version = "1.19.0"; # note: `conan` package may require a hardcoded one
-  format = "setuptools";
+  pyproject = true;
   pname = "patch-ng";
 
   src = fetchPypi {

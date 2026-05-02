@@ -8,7 +8,7 @@
 buildPythonPackage rec {
   pname = "plexwebsocket";
   version = "0.0.14";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "jjlawren";

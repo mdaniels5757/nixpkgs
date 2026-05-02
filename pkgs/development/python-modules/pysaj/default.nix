@@ -9,7 +9,7 @@
 buildPythonPackage rec {
   pname = "pysaj";
   version = "0.0.16";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "fredericvl";

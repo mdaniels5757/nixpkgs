@@ -11,7 +11,7 @@
 buildPythonPackage rec {
   pname = "smpplib";
   version = "2.2.4";
-  format = "setuptools";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;
