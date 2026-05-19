@@ -74,7 +74,7 @@ let
           "full"
         ]
       );
-      default = "source";
+      default = "full";
       description = ''
         This controls the default derivation `name` attribute set by the
         `fetch*` (`fetchzip`, `fetchFromGitHub`, etc) functions.
@@ -91,10 +91,11 @@ let
         cache-poisoned (see [NixOS/nix#969](https://github.com/NixOS/nix/issues/969)).
 
         Setting this to `"versioned"` greatly helps with discoverability of
-        sources in `/nix/store` and makes cache-poisoning of `/nix/store` much
-        harder, at the cost of a single mass-rebuild for all `src`
-        derivations, and an occasional rebuild when a source changes some of
-        its non-hash attributes.
+        sources in `/nix/store`, prevents the common mistake of updating a
+        package's source URL/revision for a new version but not its hash, and
+        makes cache-poisoning of `/nix/store` much harder, all for the cost of
+        a single mass-rebuild for all `src` derivations, and an occasional
+        rebuild when a source changes some of its non-hash attributes.
 
         Setting this to `"full"` is similar to setting it to `"versioned"`,
         but the use of `fetcherName` in the derivation name will force a
