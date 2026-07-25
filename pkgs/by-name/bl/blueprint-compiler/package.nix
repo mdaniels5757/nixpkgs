@@ -31,7 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
   nativeBuildInputs = [
-    gobject-introspection
     meson
     ninja
     python3
@@ -45,6 +44,11 @@ stdenv.mkDerivation (finalAttrs: {
         pygobject3
       ]
     ))
+  ];
+
+  propagatedNativeBuildInputs = [
+    # For setup hook, so that the compiler can find typelib files
+    gobject-introspection
   ];
 
   nativeCheckInputs = [
