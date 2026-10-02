@@ -1,7 +1,22 @@
 {
-  version = "26.930.31730";
-  src = {
-    url = "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.930.31730.zip";
-    hash = "sha256-v9pmGnycpE2sMWgTQFjdYAeUfN4xit431XDEhDKfbUE=";
+  darwin = {
+    version = "26.930.31730";
+    src = {
+      url = "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.930.31730.zip";
+      hash = "sha256-v9pmGnycpE2sMWgTQFjdYAeUfN4xit431XDEhDKfbUE=";
+    };
+  };
+  linux = {
+    version = "26.930.31730";
+    src = {
+      x86_64-linux = {
+        url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.930.31730_amd64.deb";
+        hash = "sha256-4BdNjQpfQUEUVFjIFPPC2GPdZ+lCuGh4Wh9drJy6PhY=";
+      };
+      aarch64-linux = {
+        url = "https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.930.31730_arm64.deb";
+        hash = "sha256-3ZgAhel0b62L1FtINUiF0uo6mtCYieDw1iMvHYGbJrI=";
+      };
+    };
   };
 }
